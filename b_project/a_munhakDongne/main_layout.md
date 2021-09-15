@@ -30,8 +30,6 @@ https://dokpa.net/
 
 ## layout
 
-
-
 ### nav
 
 #### gnb
