@@ -1,122 +1,8 @@
-## 21.09.13
+# 210915_HTML 및 CLI 명령어
 
-[색상 추천 사이트](http://htmlcolorcodes.com)
+# 0914
 
-[운지법](http://typing.com/lesson)
-
-[JS/JQ, bootstrap, php](http://typing.io/lessons)
-
-[자동완성 사이트 에밋-사용하지 않는 것이 좋음](https://emmet.io/)
-
-[자동완성 사이트 에밋, HTML 기본 태그](https://docs.emmet.io/cheat-sheet/)
-
-[HTML 태그 정의 정리 사이트](http://tcpschool.com/html/html_text_comments)
-
-[HTML태그의 형태를 확인할 수 있는 사이트](https://htmlreference.io/)
-
-
-
-### 웹퍼블리싱 능력단위 시험
-
-**시험내용**:레이아웃 구조 제작하기(메인기준, 고정형으로 삽입한 레이아웃)
-
-- 1차 : 레이아웃 구조 제작하기(메인기준, 고정형으로 이미지 삽입한 레이아웃)
-  - 1280px보다 큰 규격에 해당하는 경우 처리
-- 2차 : 레이아웃 구조 제작하기(메인기준-고정형 레이아웃)
-  - 1280px 고정 기준
-
-**배점기준**:
-
-**시험시간**:6시간
-
-
-
----
-
-### MEMO
-
-#### 오늘의 진도
-
-- **VScode 설치** 세팅, 마우스휠, 탭인덱스, 테마(아이콘), 웹서버 설정
-   - 설치, 다음에서 하단 모두 체크하기
-   - 세팅>wheel검색>마우스휠줌
-   - tab 검색 사이즈 2
-   - word >Diff Editor: Word Wrap>on으로 수정
-   - 익스텐션(앱)>Material Icon Theme,Live Server(자바,PHP는 별도의 프로그램이 필요하고, 그것처럼 사용하기 위한 앱),browsersync(라이브로 확인하기 위하여)
-
-  - 다예픽 추천 앱 **indent-rainbow, rainbow Brackets,Prettier-code formatter,**auto CompeteTag,Auto close Tag(닫는태그 만들기)
-
-- **HTML코드 관련** 웹 프로토콜 포함 + html구조/css개념
-
-
-
-#### 과제
-
-- [ ] 백업 파일 확인하기, 폰트 스타일 상단 문구 수정
-
-```
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-
-
-font-family: 'Nanum Myeongjo', serif;
-```
-
-- [ ] 컬러 스타일 가이드 상단 문구 수정
-- [ ] 폴더명 및 내PC(윈+E) 영어로 변경
-
-
-
-```html
-<!doctype html>
-<!--test.html-->
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=divice-width, inital-scale=1.0">
-    <title>test</title>
-    <!--CSS/Design-->
-    <style>
-      /* design (CSS주석표시)*/
-      body {background-color:#fda;}
-
-    </style>
-  </head>
-  <body>
-    <!--layout-->
-
-  </body>
-</html>
-```
-
-
-
-#### 피드백
-
-- **로고 사용 규정 유무** - 로고가 없을 때 참고 사이트는 동종 업종일 필요는 없다.
-- 컬러 스타일 가이드 상단 문구 수정
-- 명암비 4.5↑을 기준으로 해야함. (3↑ 글씨 크게)
-- 폰트 스타일 상단, 다운로드, 웹폰트 링크 연결시켜 놔야함.(사이즈 체크 시 사용할 모든 폰트 입력해야 함)
-
-
-
----
-
-
-
-## 수업 진도(21.09.14)
-
-#### web
-
-**장애에 구애없이 모든 사람들이 손쉽게 정보를 공유할 수 있는 공간**
-
-박스 내부에 다른 박스를 배치하여 필요한 기능과 역할을 분리
-
-+Semantic Tag - 각 박스에 의미 부여
-
-
+## 키보드 언어 정리
 
 ``` 
 ` 백틱
@@ -137,31 +23,7 @@ _ 언더바
 
 
 
-[운지법](http://typing.com/lesson)
-
-[JS/JQ, bootstrap, php](http://typing.io/lessons)
-
-
-
-#### 이름 표기법
-
-- camelCase 표기법  -띄어쓰기대신 중간에 대문자
-
-- PascalCase표기법 - 첫문자도 대문자 (JS, C등에서 class, 생성자)
-
-- snake_case표기법
-
-- Hungarian표기법 - 접두어를 사용하는 표기법   ex. chName, fNumber,  headBox→hb 
-
-
-
-**ID(camelCase)**
-
-**class(snake_case)**
-
-
-
-#### 경로
+## 파일, 폴더 경로
 
 > /루트(설정최상위)      ./현재위치     ../현재 위치의 상단 폴더
 
@@ -175,40 +37,7 @@ _ 언더바
 
 
 
-#### 색채
-
-
-
-**RGBA(레드, 그린, 블루, 알파)** 알파는 투명도 0~100% or 0~1
-
-**HEX** #FFFFFF #000000
-
-
-
-**color code** [색상 추천 사이트](http://htmlcolorcodes.com)
-
-color:red
-
-color:#ff0000;
-
-color:rgb(255,0,0);
-
-color:hsl(0,100%,50%);
-
-
-
-### vscode
-
-#### 폴더를 열 때
-
-- 폴더안에 들어가 오른쪽 마우스 클릭, code로 열기
-- gitbath 열어서 **pwd**(pwd는 Print Working Directory 의 약어) <엔터> **cd (한칸 띄고 폴더를 끌어온다.)** <엔터>code . <엔터>
-
-
-
-
-
-### HTML
+## HTML
 
 **`<!-- -->`** ◀ 주석처리, 문서의 첫째줄에는 사용하지 않아야 함.
 
@@ -216,7 +45,7 @@ color:hsl(0,100%,50%);
 
 
 
-#### 폴더, 파일 기준
+### 폴더, 파일 기준
 
 - 웹 구현 시 지정된 기준폴더를 설정하여 최상단으로 인식
 - 최초로 인식하는 파일은 지정된 위치기준 가장 상위 폴더에서 `index.html`를 인식시켜야 함
@@ -230,9 +59,9 @@ color:hsl(0,100%,50%);
 
 
 
-#### head 태그
+### head 태그
 
-##### 해드 기본 태그
+#### 해드 기본 태그
 
 ```html
   <head>
@@ -248,13 +77,13 @@ color:hsl(0,100%,50%);
 </head>
 ```
 
-##### ▼ 반응형을 위한 헤드 내 메타태그
+#### ▼ 반응형을 위한 헤드 내 메타태그
 
 `    <meta name="viewport" content="width=divice-width, initial-scale=1.0">`
 
 
 
-##### ▼ 비표준화 브라우저 용 메타태그
+#### ▼ 비표준화 브라우저 용 메타태그
 
 `    <meta http-equiv="X-UA-Compatible" content="IE=edge">`  
 
@@ -266,13 +95,13 @@ color:hsl(0,100%,50%);
 
 
 
-#### body 태그
+### body 태그
 
 <u>ctrl + [ or ]키를 누르면 문장 전체를 들여쓰기, 내어쓰기 할 수 있다.</u>
 
 
 
-##### 이동 태그
+#### 이동 태그
 
 ```html
 <a href="./main.html">메인 페이지로 이동</a>
@@ -299,9 +128,9 @@ main으로 돌아오겠음 이라는 뜻
 
 
 
-##### H태그, 제목 태그
+#### H태그, 제목 태그
 
-![h1태그 화면에 표시](Additional_data\210913\htmlCode_img1.png)
+![h1태그 화면에 표시](add_data/html_basic/htmlCode_img1.png)
 
 ```html
     <h1>작성된 문서에서 가장 중요한 제목! 한 번만 사용 가능</h1>
@@ -314,9 +143,9 @@ main으로 돌아오겠음 이라는 뜻
 
 
 
-##### 선긋기
+#### 선긋기
 
-![hr태그 화면에 표시](Additional_data\210913\htmlCode_img2.png)
+![hr태그 화면에 표시](add_data/html_basic/htmlCode_img2.png)
 
 ```html
     <hr />
@@ -324,9 +153,9 @@ main으로 돌아오겠음 이라는 뜻
 
 
 
-##### 문단(설명하는 요소)
+#### 문단(설명하는 요소)
 
-![문단태그 화면에 표시](Additional_data\210913\htmlCode_img3.png)
+![문단태그 화면에 표시](add_data/html_basic/htmlCode_img3.png)
 
 ```html
     <p>paragraph, 문단을 위미하는 요소. 줄바꿈을 위해서는<br /> 코드를 삽입, 설명을 하는 요소</p>
@@ -341,9 +170,9 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### 인용문 표현
+#### 인용문 표현
 
-![인용문태그 화면에 표시](Additional_data\210913\htmlCode_img4.png)
+![인용문태그 화면에 표시](add_data/html_basic/htmlCode_img4.png)
 
 ```html
     <q>인용문 표현(한줄에 주로 사용)</q>
@@ -352,9 +181,9 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### 주소 표현
+#### 주소 표현
 
-![어드레스태그 화면에 표시](Additional_data\210913\htmlCode_img5.png)
+![어드레스태그 화면에 표시](add_data/html_basic/htmlCode_img5.png)
 
 ```html
     <address>
@@ -365,7 +194,7 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### 묶음
+#### 묶음
 
 ```html
 <div>
@@ -378,9 +207,9 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### 강조 표시
+#### 강조 표시
 
-![](Additional_data\210913\htmlCode_img6.png)
+![](add_data/html_basic/htmlCode_img6.png)
 
 ```html
     <div>
@@ -405,7 +234,7 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### class 이름 짓기
+#### class 이름 짓기
 
 ```html
 <head>
@@ -421,7 +250,7 @@ P태그 내에 DIV 태그를 담을 수는 없다.
 
 
 
-##### 링크연결 및 이미지 연결
+#### 링크연결 및 이미지 연결
 
 ```html
     <div>
@@ -446,15 +275,15 @@ a와 img 태그 모두 인라인 태그임으로, H3의 블럭태그와 분리�
 
 
 
-### cli, 터미널
+## cli, 터미널
 
-##### 새 파일 만들기 = touch
+#### 새 파일 만들기 = touch
 
 $ touch test.html tset2.html find.html
 
 
 
-##### 새 폴더 만들기 = mkdir
+#### 새 폴더 만들기 = mkdir
 
 $ mkdir css js
 
@@ -466,7 +295,7 @@ $ mkdir css js
 
 
 
-##### <u>삭제하기  rm -rf  </u>
+#### <u>삭제하기  rm -rf  </u>
 
 (-rf는 디렉토리와 파일로 강제를 뜻함, <u>강제로 삭제하겠다.</u> -r은 파일, -f는 폴더 파일과 폴더 개별로 하나씩도 가능)
 
@@ -474,7 +303,7 @@ $ rm -rf find.html test.html test.html
 
 
 
-##### 파일 현재 경로보기
+#### 파일 현재 경로보기
 
 <u>cli 내에서 경로보기</u>
 
@@ -484,14 +313,14 @@ aytjoeun@DESKTOP-BMCU7K8 MINGW64 /e/work/c_jeonga/smart_21/c_code (main)
 
 
 
-##### <u>폴더, 파일 열어주기</u>
+#### <u>폴더, 파일 열어주기</u>
 
 aytjoeun@DESKTOP-BMCU7K8 MINGW64 /e/work/c_jeonga/smart_21/c_code (main)
 **$ start .**
 
 
 
-##### <u>위치 이동</u>
+#### <u>위치 이동</u>
 
 $ cd.. || cd 폴더명/폴더명
 
