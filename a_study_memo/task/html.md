@@ -4,15 +4,20 @@
 
 ```html
 <!doctype html>
+<!--문서이름-->
 <html lang="ko-KR">
     <head>
         <meta charset="UTF-8">
         <meta http="X-UA-Compatible" content="IE=edge">
         <meta name=viewport content="width=device-width, inital-scale=1.0">
         <title></title>
+        <!--style-->
         <style></style>
     </head>
     <body>
+        <!--layout-->
+        
+        <!--script-->
         <script></script>
     </body>
 </html>
@@ -21,19 +26,19 @@
 # 02번
 
 ```html
-<!Doctype html>
-<html>
+<!doctype html>
+<html lang="kr_KO">
      <head>
          <meta charset=“UTF-8”>
              <title>웹페이지 구축하기</title>
          <style>
-             body {margin:0; padding:0; border:none;}
+             body, html {margin:0; padding:0; border:none;}
          </style>
      </head>
      <body>
          <h1>내용파악하기</h1>
          <h2>
-            <a href=“http://naver.com>네이버로이동</a>
+            <a href=“http://naver.com">네이버로이동</a>
         </h2>
      </body>
 </html>
@@ -41,21 +46,19 @@
 
 # 03번
 
-ID - 중복사용 불가능하다.
-
-class - 중복으로 사용 가능
-
 ```css
 #id { }
 .class { }
 ```
 
+ID - 중복사용 불가능하다, 연결점 O, 
 
+class - 여러개의 값O, 중복으로 사용 가능
 
 # 04번
 
 ```html
-<img src="" alt="">
+<img src="" alt="" />
 ```
 
 **src** 이미지의 주소
@@ -88,7 +91,9 @@ class - 중복으로 사용 가능
 h2, h3, p { margin:0; padding:0; }
 ```
 
+모든 브라우저는 각 엘리먼트에 개별로 여백, 외곽선, 기타옵션 설정되어있다.
 
+(`RESET.css`)-기본설정되어있는 css를 초기화 시키는 것
 
 
 
