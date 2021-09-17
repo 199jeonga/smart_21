@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* b_02_psuedo.css */
+
+li { 
+  width:400px; height:auto; 
+  margin:5px; padding:10px;
+  background-color: #ddd;
+}
+
+.on:hover { background-color: #0af; }
+.push:active { background-color: #f0c; }
+.link > a:visited {color:#f00;}
+.go > a:link {
+  display: block; 
+  width: 100%; height: 100%; 
+  background-color: #fff;}
+.go > a:visited { color:#f00; background-color: #afa;}
+
+.none { 
+  display:none;
+  width:100px; height:300px; 
+  background-color: #afa;}
+.on:hover > div{ display: block;}
+.check > a:focus {
+  outline:0;
+  background-color: #a77; color:#fff;
+}
+
+.fornt { font-weight: 700; }
+.fornt:before{
+  content:"앞 글씨 추가";
+  color : #f00;
+  display: block;
+  width: 100px;
+  height: 10px;
+  background-color: #fa4;
+}
+.back{ color: #505;}
+.back:after{
+  content:"-뒤에 추가";
+}
+.both:before{
+  content: "앞에는 빨간색";
+  color:red;
+  font-weight: 900;
+}
+
+.both:after{
+  content:"뒤엔 노란색";
+  color:#f07; font-style: italic;
+}
+
+.first::first-letter {font-size:2rem; font-weight: bold;
+        color:#f06;
+      }
+
+.multi_line::first-line{
+  text-decoration: underline;
+  color:#f70;
+}
