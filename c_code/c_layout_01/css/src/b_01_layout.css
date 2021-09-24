@@ -51,6 +51,26 @@ background-color: #afa;}
   .inner_03 .insert {width: 60%; background-color: #57f;}    
   
 
+  .box_05{
+width: 600px; height: auto;
+margin: auto;
+border: 5px solid #ccc;
+  }
+.box_05>div{
+  float: left;
+  width: 200px; height: 600px;
+  padding: 5px; box-sizing: border-box;
+}
+.box_05 .insert{
+  width: 100%; height: 200px;
+  background-color: #cf2;
+}
+.inner_02>.insert{
+  margin-top: 200px;
+}
+.inner_03>.insert{
+  margin-top: 400px;
+}
 
   .box_06{
     width: 600px; height: auto; min-height: 200px;
