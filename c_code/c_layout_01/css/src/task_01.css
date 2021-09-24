@@ -1,0 +1,20 @@
+#wrap{padding: 10px; margin: auto; width:600px; height: auto; background-color: #ccc;}
+#wrap:after, #wrap::after{
+    content:""; display:block; clear:both;
+}
+
+#headBox, #contentBox{    
+    float:left;
+    width:80%; height:300px;}
+#headBox{
+    background-color:#fac;
+}
+#contentBox{
+    background-color:#7cf;
+}
+#footBox{
+    float:left;
+    width:20%; height:600px;
+    background-color:#caf;
+    margin-top: -300px;
+}
