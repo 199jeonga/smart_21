@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* main.css */
+
 /* reset.css */
 body,
 h1, h2, h3, h4, h5, h6,
@@ -9,7 +10,7 @@ p,pre,address{
   font-family: sans-serif;
   font-size: 16px;
 }
-ol, ul{list-style: none;}
+ol, ul{list-style: none;} 
 a{text-decoration: none; color:inherit;}
 button{border: transparent; cursor: pointer;}
 
@@ -18,7 +19,11 @@ button{border: transparent; cursor: pointer;}
 .clearfix::after, .clearfix:after{
   content:""; display: block; clear: both;
 }
-
+h3, .pop_con_area, .new_con_area, .recom_con_area, .mini_ad_outer, .community_area,
+.foot_area {
+  width: 1300px;
+  margin: 0 auto;
+}
 
 /* design.css */
 
@@ -26,4 +31,259 @@ button{border: transparent; cursor: pointer;}
 #wrap{
   width: 1600px; height: auto;
   margin: auto;
+  border: 1px solid #333;
+}
+
+
+/*headBox
+-------------------------------------------------*/
+#headBox{
+width: 100%; height: 150px;
+background-color: #888;
+}
+  h1{
+  float: left;
+  background-color: #fff;
+  width: 250px; height: 80px;
+  margin-top: 34px; margin-left: 50px;
+  }
+  .nav_01{
+    float: left;
+    background-color: #fff;
+    width: 850px; height: 80px;
+    margin-top: 34px; margin-left: 75px; margin-right: 75px;
+  }
+  .nav_01 ul{
+    width: auto; height: auto;
+  }
+  .nav_01 li{
+    float:left;
+    width: 150px; height: 70px;
+    background-color: #faa;
+    margin-left: 20px;
+    margin-top:5px;
+  }
+  .nav_01 li:first-child{
+    margin-left:0;
+  }
+  .nav_02{
+    float: left;
+    background-color: #fff;
+    width: 250px; height: 80px;
+    margin-top: 34px; margin-right: 50px;
+  }
+
+
+
+
+
+/*adviewBox
+-------------------------------------------------*/
+#adviewBox{
+width: 100%; height: 750px;
+background-color: #777;
+}
+.view_outer{
+  width: 1300px; height: 600px;
+  background-color: #aaa;
+  padding:28px 0;
+  background-clip: content-box;
+  margin: 0 auto;
+}
+.view_indicator{
+  width: 850px; height: 60px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.view_indicator li{
+  float: left;
+  width: 120px; height: 40px;
+  background-color: #cca;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.view_indicator li:first-child{
+  margin-left: 0;
+}
+
+/*localNavBox
+-------------------------------------------------*/
+#localNavBox{
+width: 100%; height: 250px;
+background-color: #666;
+}
+.local_nav_outer{
+  width: 1500px; height: 196px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding-top:18px;
+  background-clip: content-box;
+}
+.local_nav_outer ul{
+  width: 100%; height: auto;
+  margin: 0 auto;
+}
+.local_nav_outer li{
+  float:left;
+  width: 200px; height: 150px;
+  margin-left: 30px;
+  margin-top: 23px;
+  background-color: #caa;
+}
+.local_nav_outer li:first-child{
+  margin-left: 0;
+}
+
+
+/*localNavBox+p
+-------------------------------------------------*/
+#localNavBox+p{
+width: 100px; height: 50px;
+}
+
+
+
+
+/*popularContentBox
+-------------------------------------------------*/
+#popularContentBox{
+width: 100%; height: 600px;
+background-color: #777;
+}
+h3{
+  height: 50px;
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+.pop_con_area{
+  height: 470px;
+  background-color: #aaa;
+}
+.pop_con_area>div{
+  float: left;
+  width: 350px; height: 430px;
+  margin-right: 62px;
+  background-color: #daa;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.pop_con_img{
+  width: 330px; height: 200px;
+  background-color: #aad;
+  margin-bottom: 14px;
+}
+.pop_con_text{
+  width: 330px; height: 200px;
+  background-color: #aad;
+}
+
+
+
+
+/*newContentBox
+-------------------------------------------------*/
+#newContentBox{
+width: 100%; height: 900px;
+background-color: #666;
+}
+#newContentBox h3{
+  padding-top: 60px;
+  background-clip: content-box;
+}
+.new_con_area{
+  width: 1300px; height: 700px;
+  background-color: #aaa;
+  margin: 0 auto;
+  padding-top:30px;
+  background-clip: content-box;
+}
+
+
+/*newContentBox+p
+-------------------------------------------------*/
+#newContentBox+p{
+width: 100%; height: 80px;
+}
+
+
+/*recommendedContentBox
+-------------------------------------------------*/
+#recommendedContentBox{
+width: 100%; height: 600px;
+background-color: #777;
+}
+h3{
+  padding-top: 30px;
+  background-clip: content-box;
+}
+.recom_con_area{
+  width: 1300px; height: 440px;
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+
+/*recommendedContentBox+p
+-------------------------------------------------*/
+#recommendedContentBox+p{
+  width: 100%; height: 80px;
+}
+
+
+/*communityBox
+-------------------------------------------------*/
+#communityBox{
+width: 100%; height: 800px;
+background-color: #555;
+}
+#communityBox h3{
+  padding-top: 50px;
+  background-clip: content-box;
+}
+.community_area{
+  width: 1300px; height: 600px;
+  background-color: #ddd;
+  margin-top: 30px;
+}
+
+/*communityBox+p
+-------------------------------------------------*/
+#communityBox+p{
+width: 100%; height: 80px;
+}
+
+
+
+/*miniAdBox
+-------------------------------------------------*/
+#miniAdBox{
+width: 100%; height: 400px;
+background-color: #666;
+}
+.mini_ad_outer{
+  width: 1500px; height: 300px;
+  background-color: #fff;
+  padding-top: 40px;
+  background-clip: content-box;
+}
+
+
+/*miniAdBox+p
+-------------------------------------------------*/
+#miniAdBox+p{
+width: 100%; height: 80px;
+}
+
+
+/*footBox
+-------------------------------------------------*/
+#footBox{
+width: 100%; height: 200px;
+background-color: #444;
+}
+.foot_area{
+  width: 1300px; height: 140px;
+  background-color: #111;
+  padding-top: 22px;
+  background-clip: content-box;
 }
