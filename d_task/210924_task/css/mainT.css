@@ -21,7 +21,7 @@ table, tr, td, th, thead, tbody, tfoot{
 }
 em, address{font-style:nomal;}
 b,strong{font-weight:nomal;}
-abbr{text-decoration:none;} //밑줄이 무조건 들어가는 태그
+abbr{text-decoration:none;} /* 밑줄이 무조건 들어가는 태그 */
 button{border: transparent; cursor: pointer;}
 
 
@@ -35,9 +35,15 @@ h3, .pop_con_area, .new_con_area, .recom_con_area, .mini_ad_outer, .community_ar
   width: 1300px;
   margin: 0 auto;
 }
+h3{
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: #ccc;
+}
 div+p{
   width: 100%; height: 80px;
 }
+.blind{ overflow: hidden; width: 0; height: 0; }
 
 /* design.css */
 
@@ -69,11 +75,12 @@ background-color: #888;
   }
   .gnb ul{
     width: auto; height: auto;
+    padding: 5px;
   }
   .gnb li{
     float:left;
     width: 150px; height: 70px;
-    margin-top:5px; margin-left: 20px;
+    margin-left: 20px;
     background-color: #faa;
   }
   .gnb li:first-child{
@@ -105,15 +112,18 @@ background-color: #777;
 }
 .view_indicator{
   width: 850px; height: 60px;
-  margin: 0 auto;
+  margin: 0 auto; box-sizing: border-box;
   background-color: #fff;
+}
+.view_indicator ul{
+  width: 100%; height: auto;
+  padding: 10px 15px; 
 }
 .view_indicator li{
   float: left;
   width: 120px; height: 40px;
   background-color: #cca;
   margin-left: 20px;
-  margin-top: 10px;
 }
 .view_indicator li:first-child{
   margin-left: 0;
@@ -127,19 +137,19 @@ background-color: #666;
 }
 .local_nav_outer{
   width: 1500px; height: 196px;
-  margin: 0 auto;
+  margin: auto;
   background-clip: content-box; padding-top:18px;
   background-color: #fff;
 }
 .local_nav_outer ul{
   width: 100%; height: auto;
-  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 23px 75px;
 }
 .local_nav_outer li{
   float:left;
   width: 200px; height: 150px;
   margin-left: 30px;
-  margin-top: 23px;
   background-color: #caa;
 }
 .local_nav_outer li:first-child{
@@ -153,6 +163,15 @@ background-color: #666;
 width: 100px; height: 50px;
 }
 
+
+/* ============================================== */
+/* 
+popularContentBox
+new_con_area
+recom_con_area */
+.content_box_wrap{
+  width: 100%; height: auto;
+}
 
 
 
@@ -169,9 +188,11 @@ h3{
 }
 .pop_con_area{
   height: 470px;
+  box-sizing: border-box;
+  padding: 20px 63px;
   background-color: #aaa;
 }
-.pop_con_area>div{
+.card{
   float: left;
   width: 350px; height: 430px;
   margin-right: 62px;
@@ -179,14 +200,15 @@ h3{
   padding: 10px;
   background-color: #daa;
 }
-.pop_con_img{
-  width: 330px; height: 200px;
-  margin-bottom: 14px;
+.card:last-child{margin-right: 0;}
+
+.card>div{
+  width: 100%; height: 200px;
+  box-sizing: border-box; padding: 8px;
   background-color: #aad;
 }
-.pop_con_text{
-  width: 330px; height: 200px;
-  background-color: #aad;
+.pop_con_img{
+  margin-bottom: 14px;
 }
 
 
@@ -215,14 +237,14 @@ background-color: #666;
   background-color: #8a8;
 }
 .new_con_title_img{
-  width: 640px; height: 350px;
+  width: 100%; height: 350px;
   background-color: #daa;
 }
 .new_con_title_text{
-  width: 600px; height: 290px;
+  width: 100%; height: 350px;
+  box-sizing: border-box;
+  padding: 20px;
   background-color: #e5e;
-  margin: 0 auto;
-  padding-top: 30px;
   background-clip: content-box;
 }
 .new_con_title_text p{
@@ -305,37 +327,47 @@ h3{
 height: 800px;
 background-color: #555;
 }
-#communityBox h3{
-  padding-top: 50px;
+#communityBox h2{
+  width: 1300px;
   background-clip: content-box;
+  padding-top: 50px; margin: auto;
 }
 .community_area{
   width: 1300px; height: 600px;
+  margin:auto;
   background-color: #ddd;
-  margin-top: 30px;
 }
-.community_area div{
+.community_area ul{width: 100%; height: auto;}
+
+.community_con{
   width: 100%; height: 160px;
-  background-color: #aad;
   margin-bottom: 60px;  
+  background-color: #aad;
 }
-.community_area p{
-  float: left;
+.community_con:last-child{ margin-bottom: 0;}
+
+.community_con:before, .community_con::before{
+  content:"Q & A"; 
+  display: block;
   width: 300px; height: 160px;
-  background-color: #daa;
+  font-size:30px; text-align: center;
+  line-height:160px;
+  background-color: #fff;
 }
-.community_area dl{
-  float: right;
-  margin-top: 25px;
+.community_con > dl{
+  width: 980px;
+  width:calc(100% - 320px); height:100px;
+  margin-left: 320px;
+  padding-top: 30px;
 }
-.community_area dt{
-  width: 800px; height: 40px;
+.community_con dt{
+  width: 100%; height: 50px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: #fac;
 }
-.community_area dd{
-  width: 970px; height: 50px;
-  background-color: #fff;
+.community_con dd{
+  width: 100%; height: 50px;
+  background-color: #fac;
 }
 
 
