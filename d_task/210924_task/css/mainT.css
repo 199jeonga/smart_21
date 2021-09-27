@@ -1,9 +1,9 @@
 @charset "UTF-8";
-/* main.css */
+/* mainT.css */
 
 /* reset.css */
 html, body{
-  width: 100%; height: 100%;
+  width: 100%; height: 100%;  /* 기본으로 100% 적용되지만, #wrap 100%를 적용할 때 이 태그를 넣지 않								으면 #100이 안 될 수도 있음 */
 }
 html, body,
 h1, h2, h3, h4, h5, h6,
@@ -15,7 +15,15 @@ div,p,pre,address{
 }
 ol, ul{list-style: none;} 
 a{text-decoration: none; color:inherit;}
+table, tr, td, th, thead, tbody, tfoot{
+    border:1px solid #333;
+    border-spacing:0; border-collapse:collapse;
+}
+em, address{font-style:nomal;}
+b,strong{font-weight:nomal;}
+abbr{text-decoration:none;} //밑줄이 무조건 들어가는 태그
 button{border: transparent; cursor: pointer;}
+
 
 
 /* common.css */
@@ -26,6 +34,9 @@ h3, .pop_con_area, .new_con_area, .recom_con_area, .mini_ad_outer, .community_ar
 .foot_area {
   width: 1300px;
   margin: 0 auto;
+}
+div+p{
+  width: 100%; height: 80px;
 }
 
 /* design.css */
@@ -42,38 +53,37 @@ h3, .pop_con_area, .new_con_area, .recom_con_area, .mini_ad_outer, .community_ar
 -------------------------------------------------*/
 #headBox{
 height: 150px;
+box-sizing: border-box; padding: 34px 50px 0;
 background-color: #888;
 }
   h1{
   float: left;
-  background-color: #fff;
   width: 250px; height: 80px;
-  margin-top: 34px; margin-left: 50px;
+  background-color: #fff;
   }
-  .nav_01{
+  .gnb{
     float: left;
-    background-color: #fff;
     width: 850px; height: 80px;
-    margin-top: 34px; margin-left: 75px; margin-right: 75px;
+    margin-left: 75px;
+    background-color: #fff;
   }
-  .nav_01 ul{
+  .gnb ul{
     width: auto; height: auto;
   }
-  .nav_01 li{
+  .gnb li{
     float:left;
     width: 150px; height: 70px;
+    margin-top:5px; margin-left: 20px;
     background-color: #faa;
-    margin-left: 20px;
-    margin-top:5px;
   }
-  .nav_01 li:first-child{
+  .gnb li:first-child{
     margin-left:0;
   }
-  .nav_02{
-    float: left;
-    background-color: #fff;
+  .unb{
+    float: right;
     width: 250px; height: 80px;
-    margin-top: 34px; margin-right: 50px;
+    margin-right: 50px;
+    background-color: #fff;
   }
 
 
@@ -88,15 +98,15 @@ background-color: #777;
 }
 .view_outer{
   width: 1300px; height: 600px;
-  background-color: #aaa;
-  padding:28px 0;
-  background-clip: content-box;
   margin: 0 auto;
+  background-clip: content-box;
+  padding:28px 0;
+  background-color: #aaa;
 }
 .view_indicator{
   width: 850px; height: 60px;
-  background-color: #fff;
   margin: 0 auto;
+  background-color: #fff;
 }
 .view_indicator li{
   float: left;
@@ -117,10 +127,9 @@ background-color: #666;
 }
 .local_nav_outer{
   width: 1500px; height: 196px;
-  background-color: #fff;
   margin: 0 auto;
-  padding-top:18px;
-  background-clip: content-box;
+  background-clip: content-box; padding-top:18px;
+  background-color: #fff;
 }
 .local_nav_outer ul{
   width: 100%; height: auto;
@@ -155,8 +164,8 @@ background-color: #777;
 }
 h3{
   height: 50px;
-  background-color: #ccc;
   margin-bottom: 30px;
+  background-color: #ccc;
 }
 .pop_con_area{
   height: 470px;
@@ -166,14 +175,14 @@ h3{
   float: left;
   width: 350px; height: 430px;
   margin-right: 62px;
-  background-color: #daa;
-  padding: 10px;
   box-sizing: border-box;
+  padding: 10px;
+  background-color: #daa;
 }
 .pop_con_img{
   width: 330px; height: 200px;
-  background-color: #aad;
   margin-bottom: 14px;
+  background-color: #aad;
 }
 .pop_con_text{
   width: 330px; height: 200px;
@@ -249,11 +258,6 @@ background-color: #666;
 }
 
 
-/*newContentBox+p
--------------------------------------------------*/
-#newContentBox+p{
-height: 80px;
-}
 
 
 /*recommendedContentBox
@@ -293,12 +297,6 @@ h3{
 
 
 
-
-/*recommendedContentBox+p
--------------------------------------------------*/
-#recommendedContentBox+p{
-  width: 100%; height: 80px;
-}
 
 
 /*communityBox
@@ -343,12 +341,6 @@ background-color: #555;
 
 
 
-/*communityBox+p
--------------------------------------------------*/
-#communityBox+p{
-height: 80px;
-}
-
 
 
 /*miniAdBox
@@ -376,13 +368,6 @@ background-color: #666;
 
 
 
-/*miniAdBox+p
--------------------------------------------------*/
-#miniAdBox+p{
-width: 100%; height: 80px;
-}
-
-
 /*footBox
 -------------------------------------------------*/
 #footBox{
@@ -391,9 +376,8 @@ background-color: #444;
 }
 .foot_area{
   width: 1300px; height: 140px;
+  background-clip: content-box; padding-top: 22px;
   background-color: #111;
-  padding-top: 22px;
-  background-clip: content-box;
 }
 .foot_area div:first-child{
   float: left;
