@@ -43,8 +43,8 @@
       <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae delectus distinctio inventore maxime sit </p></div>
       <button><a href="#">바로가기</a></button>
     </div>
-    <div>
-
+    <div class="view_img_area">
+      img
     </div>
     </section><!--viewBox-->
 
@@ -52,48 +52,70 @@
     <main>
       <article id="newBox">
         <h2>newBox</h2>
-        <ul class="new_area">
+        <ul class="new_area clearfix">
           <li>list_01</li>
           <li>list_02</li>
           <li>list_03</li>
         </ul>
         <ul class="new_indicator">
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
         </ul>
       </article><!--newBox-->
 
       <article id="subBox">
-        <h2>subBox</h2>
-        <div><p></p></div>
-        <div><button></button></div>
-        <div><img src=""></div>
+        <h2 class="blind">subBox</h2>
+        <div class="sub_img_area">img</div>
+        <div class="sub_con_area clearfix">
+          <p>subBox</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus</p>
+          <div class="button"><img src="../img/button/btn_01.png" art="-바로가기"></div>
+          <div class="button"><img src="../img/button/btn_02.png" art="-바로가기"></div>
+        </div>
       </article><!--subBox-->
 
       <article id="bestBox">
-        <div>
-          <h2>bestBox</h2>
-          <div><p></p></div>
-          <div>
-            <button></button>
-            <button></button>
+          <div class="best_title_area">
+            <h2>Banner<br />Title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil</p>
+            <div class="best_title_part clearfix">
+              <div class="button"><img src="../img/button/prev.png" art="이전으로 가기"></div>
+              <div class="button"><img src="../img/button/next.png" art="다음으로 가기"></div>
+            </div>
+            <div class="button"><img src="../img/button/more.png" art="더보기 "></div>
           </div>
-          <button></button>
-        </div>
         <ul class="best_con_area">
-          <li>list_01</li>
-          <li>list_02</li>
-          <li>list_03</li>
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
         </ul>
       </article><!--bestBox-->
     </main>
 
 
-    <section id="galleryBox">
+    <section id="galleryBox" class="clear">
       <h2>galleryBox title</h2>
-      <div><img src=""></div>
-      <ul class="gallery_sercice">
+      <div><img src="../img/button/gallry_img.png" art="배너 타이틀 이미지"></div>
+      <ul class="gallery_area">
         <li>service_01</li>
         <li>service_02</li>
         <li>service_03</li>
@@ -102,8 +124,8 @@
     </section><!--galleryBox-->
 
     <aside id="sponserBox">
-      <h2>sponsorBox</h2>
-      <ul>
+      <h2 class="blind">sponsorBox</h2>
+      <ul class="sponser_area clearfix">
         <li>sponsor_01</li>
         <li>sponsor_02</li>
         <li>sponsor_03</li>
@@ -113,22 +135,36 @@
       </ul>
     </aside><!--sponserBox-->
 
-    <footer id="footBox">
-      <h2>footBox</h2>
-      <div>
-
-      </div>
-      <div role="contentinfo">
-        <adress></adress>
-        <p></p>
-        <p></p>
-      </div>
-      <div>
-        <div>
-          <img>
+    <footer id="footBox" class="clearfix">
+      <div class="info_area">
+        <h2>footBox</h2>
+        <ul class="info_link_part">
+          <li><a href="#">list_01</a></li>
+          <li><a href="#">list_02</a></li>
+          <li><a href="#">list_03</a></li>
+          <li><a href="#">list_04</a></li>
+          <li><a href="#">list_05</a></li>
+          <li><a href="#">list_06</a></li>
+        </ul>
+        <div class="info_adress_part">
+          <p>서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)<br />Tel : 02-0000-0000  |  fax : 02-0000-0001<br />사업자등록번호 : 100-00-00000  |  통신판매업 신고 : 강남 제 000000호  |  대표이사 : 000</p>
         </div>
-        <div></div>
-        <div></div>
+        <div class="info_copy_part"><p>© coffinx Corp. All rights reserved.</p></div>
+      </div><!--contentinfo-->
+      <div class="add_site_area">
+        <div class="sns_part" class="clearfix">
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+        </div>
+        <div class="family_site_area"><p>family Site</p></div>
+        <div class="aside_area"></div>
       </div>
     </footer><!--footBox-->
   </div><!--wrap-->
