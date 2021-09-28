@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* z_01_layout.css */
+
+/* reser.css */
+html, body{
+  width: 100%; height: 100%;  /* 기본으로 100% 적용되지만, #wrap 100%를 적용할 때 이 태그를 넣지 않								으면 #100이 안 될 수도 있음 */
+}
+header, nav, main, section, article, aside, footer, figure, figcaption{
+  display: block; margin: 0; padding: 0; border:0;
+}
+html, body,
+h1, h2, h3, h4, h5, h6,
+ol,ul,li,dl,dt,dd,
+div,p,pre,address{
+  margin: 0; padding: 0; border:0;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+ol, ul{list-style: none;} 
+a{text-decoration: none; color:inherit;}
+table, tr, td, th, thead, tbody, tfoot{
+    border:1px solid #333;
+    border-spacing:0; border-collapse:collapse;
+}
+em, address{font-style:nomal;}
+b,strong{font-weight:nomal;}
+abbr{text-decoration:none;} /* 밑줄이 무조건 들어가는 태그 */
+button{border: transparent; cursor: pointer;}
+
+
+
+/* common.css */
+#wrap{
+  width: 960px; height: auto;
+  margin: auto;
+}
+.blind{width: 0; height: 0; border:0; overflow: hidden;}
+.clearfix::after,.clearfix:after {
+  content: ""; display: block;  clear: both;}
+
+
+/* design */
+#headBox{
+  width: 100%; height: 120px;
+  box-sizing: border-box;  padding: 10px; 
+  background-color: #F4F;
+}
+h1{
+  float: left;
+  width: 150px; height: 100px;
+  background-color: #fff;
+}
+.navigation{
+  float:right;
+  width: 500px; height: auto;
+}
+#unb{
+  float:right;
+  width: 220px; height: 40px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+#gnb{
+  float:right;
+  width: 500px; height: 50px;
+  background-color: #fff;
+}
+
+
+
+#viewBox{
+  width: 100%; height: 450px;
+  background-color: #F80;
+}
+
+
+#contentBox{
+  width: 100%; height: 500px;
+  background-color: #2ae;
+}
+.menu_area{
+  float: left;
+  width: auto; height:auto;
+}
+.menu_area li{
+  width: 200px; height: 100px;
+  margin-bottom: 20px;
+  font-size: 30px; line-height: 100px;
+  background-color: #d5e;
+}
+.con_list li:last-child{
+  margin-bottom:0;
+}
+.lib_list{
+  float: left;
+  width: 760px; height: 200px;
+  background-color: #2c0;
+}
+.lnb_content{
+  float: left;
+  width: auto; height: auto;
+  background-color: #243;
+}
+.lnb_content div{
+  float: left;
+  width: 380px; height: 300px;
+  background-color: #c83;
+}
+.lnb_content div:nth-child(2){
+  background-color: #c43;
+}
+
+
+
+#footBox{
+  width: 100%; height: 130px;
+  background-color: #777;
+}
