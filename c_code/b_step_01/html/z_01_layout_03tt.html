@@ -1,58 +1,175 @@
 <!DOCTYPE html>
-<!-- b_06_position.html -->
+<!-- z_01_layout_03 -->
 <html lang="ko-KR" class="no-js">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <!--[if IE]>
   <script src="../js/common/modernizr-custom.js"></script>
-
-  <link rel="stylesheet" href="../css/src/b_06_position.css">
+  <![endif]-->
+  <link rel="stylesheet" href="../css/src/z_01_layout_03tt.css">
+  <title>z_01_layout_03</title>
   <link rel="shortcut icon" href="../favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="../favicon.png">
-
-  <title>Document</title>
 </head>
 <body>
   <!-- layout -->
   <div id="wrap">
-    <hgroup>
-      <h1><a href="./a_00_content.html">처음으로</a></h1>
-      <h2>position</h2>
-    </hgroup>
-    <hr />
-    <div class="part">
-      <ul>
-        <li class="defalt">defalt</li>
-        <li class="static">static</li>
-        <li class="fixed">fixed</li>
-        <li class="absolute">absolute</li>
-        <li class="relative">relative</li>
-        <li class="defalt">defalt</li>
+    <header id="headBox">
+      <h1><a href="../html/a_00_content.html">웹</a></h1>
+      <nav id="navigation">
+        <h2 class="blind">navigation</h2>
+        <ul class="unb clearfix">
+          <li>li_01</li>
+          <li>li_02</li>
+          <li>li_03</li>
+          <li>li_04</li>
       </ul>
+      <ul class="gnb clearfix">
+        <li>list_01</li>
+        <li>list_02</li>
+        <li>list_03</li>
+        <li>list_04</li>
+        <li>list_05</li>
+        <li>list_06</li>
+      </ul>
+      </nav>
+    </header><!--headBox-->
+
+    <section id="viewBox" class="clerafix">
+      <div class="view_con_area">
+      <h2>viewBox</h2>
+      <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus harum illum molestiae delectus distinctio inventore maxime sit </p></div>
+      <button type="button"><a href="#">바로가기</a></button>
     </div>
-    <div class="ex_part" hidden>
-      <h3>화면상의 가운데 무조건 배치</h3>
-      <div class="view_center">
-        <div class="close"><button type="button">닫기</button></div>
-        화면상의 가운데 배치할 박스 생성
+    <div class="view_img_area">
+      img
+    </div>
+    </section><!--viewBox-->
+
+
+    <main>
+      <article id="newBox">
+        <h2>newBox</h2>
+        <ul class="new_area clearfix">
+          <li>list_01</li>
+          <li>list_02</li>
+          <li>list_03</li>
+        </ul>
+        <ul class="new_indicator">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </article><!--newBox-->
+
+      <article id="subBox">
+        <h2 class="blind">subBox</h2>
+        <div class="sub_img_area">img</div>
+        <div class="sub_con_area clearfix">
+          <p>subBox</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil doloribus</p>
+          <button type="button"><img src="../img/button/btn_01.png" art="-바로가기"></button>
+          <button type="button"><img src="../img/button/btn_02.png" art="-바로가기"></button>
         </div>
-      <div class="view_bg">
-        rgbz(0,0,0,0.3)
-        배경에 꽉차게 만들기
+      </article><!--subBox-->
+
+      <article id="bestBox">
+          <div class="best_title_area">
+            <h2>Banner<br />Title</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil</p>
+            <div class="best_title_part clearfix">
+              <div class="button"><img src="../img/button/prev.png" art="이전으로 가기"></div>
+              <div class="button"><img src="../img/button/next.png" art="다음으로 가기"></div>
+            </div>
+            <div class="button"><img src="../img/button/more.png" art="더보기"></div>
+          </div>
+        <ul class="best_con_area">
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
+          <li class="best_con_part">
+            <img src="../img/button/best_con_area_img.png" art="이미지">
+            <h3>Banner Title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium nihil </p>
+            <hr />
+            <p>2021. 06. 17</p>
+          </li>
+        </ul>
+      </article><!--bestBox-->
+    </main>
+
+
+    <section id="galleryBox" class="clear">
+      <h2>galleryBox title</h2>
+      <div><img src="../img/button/gallry_img.png" art="배너 타이틀 이미지"></div>
+      <ul class="gallery_area">
+        <li>service_01</li>
+        <li>service_02</li>
+        <li>service_03</li>
+        <li>service_04</li>
+      </ul>
+    </section><!--galleryBox-->
+
+    <aside id="sponserBox">
+      <h2 class="blind">sponsorBox</h2>
+      <ul class="sponser_area clearfix">
+        <li>sponsor_01</li>
+        <li>sponsor_02</li>
+        <li>sponsor_03</li>
+        <li>sponsor_04</li>
+        <li>sponsor_05</li>
+        <li>sponsor_06</li>
+      </ul>
+    </aside><!--sponserBox-->
+
+    <footer id="footBox" class="clearfix">
+      <div class="info_area">
+        <h2>footBox</h2>
+        <ul class="info_link_part">
+          <li><a href="#">list_01</a></li>
+          <li><a href="#">list_02</a></li>
+          <li><a href="#">list_03</a></li>
+          <li><a href="#">list_04</a></li>
+          <li><a href="#">list_05</a></li>
+          <li><a href="#">list_06</a></li>
+        </ul>
+        <div class="info_adress_part">
+          <p>서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)<br />Tel : 02-0000-0000  |  fax : 02-0000-0001<br />사업자등록번호 : 100-00-00000  |  통신판매업 신고 : 강남 제 000000호  |  대표이사 : 000</p>
+        </div>
+        <div class="info_copy_part"><p>© coffinx Corp. All rights reserved.</p></div>
+      </div><!--contentinfo-->
+      <div class="add_site_area">
+        <div class="sns_part" class="clearfix">
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+          <div>
+            <img src="../img/button/add_sits_area_sns_img.png" alt="sns바로가기"><a href="#"></a></img>
+          </div>
+        </div>
+        <div class="family_site_area"><p>family Site</p></div>
+        <div class="aside_area"></div>
       </div>
-    </div>
-    <div class="ex_part">
-      <h3>화면의 가운데를 기준으로 우측 500px쯤 하단 50px 위로 버튼 생성</h3>
-      <div class="btn">
-        <button type="button">상단으로 이동</button>
-      </div>
-    </div>
-  </div>
+    </footer><!--footBox-->
+  </div><!--wrap-->
+  
   <!-- script -->
-  <script>
-  </script>
+  <script></script>
 </body>
 </html>
