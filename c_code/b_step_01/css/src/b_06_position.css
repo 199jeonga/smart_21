@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* b_06_position.css */
+
+/* reset.css */
+html, body{width: 100%; height: 100%;}
+html, body, h1, h2, h3, h4, h5, h6,
+p, pre, ul, ol, li, dl, dt, dd{
+  margin: 0; padding: 0;
+}
+ol,ul{list-style: none;}
+hr{
+  margin: 0; padding: 0; border:0; border-bottom: 1px solid #555;
+}
+
+/* design */
+#wrap{
+  width: 900px; height: 500px;
+  margin: auto; padding-bottom: 2000px;
+  background-color: #fdd;
+  background-image: linear-gradient(#fdd, #ccf, rgba(230,230,230,0.5));
+}
+
+hgroup{
+  width: 100%; height: 100%;
+  box-sizing: border-box; padding: 20px;
+}
+.part{
+  width: 650px; height: 120px;
+  margin: auto; margin-top: 150px;  border: 1px solid #333;
+  box-sizing: border-box; padding: 8px; 
+  background-color: #fff;
+}
+.part ul{
+  width: 100%; height: 100%; 
+  background-color: #aaa;
+}
+
+.part li{
+  float: left; width: 100px; height: 100px;
+  border:1px soild #a7f; box-sizing: border-box;
+  text-align:center; line-height: 100px; font-weight: 800; font-size: 1.2rem;
+}
+.defalt{
+background-color: #0B9DB9;
+}
+.static{
+background-color: #530834;
+}
+.fixed{
+background-color: #D96369;
+}
+.absolute{
+background-color: #321B50;
+}
+.relative{
+background-color: #4EC3F7;
+}
+
+
+
+
+
+
+.part{position: relative;}
+.static{position: static; top:1000px; left: 4000px; z-index: -1000;}
+.fixed{position: fixed; top:0%; left: 0; z-index: 100;}
+.absolute{position: absolute; top:50px; left: 50px;}
+.relative{position: relative; top: 150px; left:-50px;}
+
+
+/* 
+.ex_part{
+  width: 80%; height: 400px; border: 2px solid #567;
+  margin: 100px auto;  padding: 30px;
+}
+.view_center{
+  position: fixed; top:50%; left:50%;
+  margin-top:-200px; margin-left: -576x;
+  width: 500px; height: 300px;
+  border:4px solid #777;
+  border-radius: 5px;
+  background-color: #fff;
+} */
+
+.ex_part{
+  width: 80%; height: 400px; border: 2px solid #567;
+  margin: 100px auto;  padding: 30px;
+}
+.view_center{
+  position: fixed; top:50%; left:50%; z-index:101;
+  margin-top:-150px; margin-left: -250px;
+  width: 500px; height: 300px;
+  border:4px solid #777;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.view_bg{
+  position:fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+.close{
+  position: absolute; right: -20px; top:-20px; 
+  width: 40px; height: 40px;
+}
+.close button{
+  width: 100%; height: 100%;
+  border: 0; margin: 0;
+  background-color: #0ac;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.ex_part{
+  position: relative;
+  width: 100%; height: 100%;
+}
+.btn{
+  position:fixed; top:50%; left: 50%;
+  width: 40px; height: 40px;
+  margin-top: -20px; margin-left: -20px;
+}
+button{
+  width: 100%; height: 100%;
+  border: 0; margin: 0;
+  background-color: #0ac;
+  cursor: pointer;
+  border-radius: 100%;
+}

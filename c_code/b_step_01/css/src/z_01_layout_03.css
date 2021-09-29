@@ -20,6 +20,7 @@ a{text-decoration: none; color:inherit;}
 }
 h2{ width: auto; height: auto; font-size:40px;}
 .button {cursor: pointer;}
+button{background-color: transparent; cursor: pointer;}
 
 
 /* design.css */
@@ -163,7 +164,7 @@ background-color: #ffbd55;
   font-size: 18px; font-weight: 700;
   margin-bottom: 11px;
 }
-.sub_con_area div{
+.sub_con_area button{
   float: left;
   width: auto; height: auto;
   margin-right: 30px;
