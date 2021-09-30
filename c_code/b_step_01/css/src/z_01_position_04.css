@@ -74,6 +74,8 @@ nav{
   box-sizing: border-box;
   border-bottom: 1px solid #333;
 }
+
+
 .tab_title_area li{
   float:left;
   width: 100px; height: 100%;
@@ -88,6 +90,8 @@ nav{
 .tab_title_area button{
   width: 100%; height: 100%;
 }
+
+
 .tab_content_area{
 width: 100%; height: 150px;
 background-color: #f88;
