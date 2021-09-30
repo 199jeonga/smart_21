@@ -1,57 +1,10 @@
 - [ ] 10/4 과제 제출 1440px, 레이아웃 구조 제작
 - [ ] 10/7 1280px 보다 큰 규격에 해당하는 레이아웃 구조
-- [ ] vscode snippets 다시 작성! css 넣어서! 넣고 지워
-
-```js
-"html_add_css": {
-  "prefix": "ht1",
-  "body": [
-    "<!DOCTYPE html>",
-    "<!-- ${TM_FILENAME_BASE}.html -->",
-    "<html lang=\"ko-KR\" class=\"no-js\">",
-    "",
-    "<head>",
-    "  <meta charset=\"UTF-8\">",
-    "  <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
-    "  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
-    "",
-    "  <link rel=\"stylesheet\" href=\"../css/common/reset.css\">",
-    "  <link rel=\"stylesheet\" href=\"../css/common/common.css\">",
-    "  <link rel=\"stylesheet\" href=\"../css/src/${TM_FILENAME_BASE}.css\">",
-    "",
-    "  <script src=\"../js/common/modernizr-custom.js\"></script>",
-    "",
-    "  <title>${1}</title>",
-    "  <link rel=\"shortcut icon\" href=\"../favicon.png\" type=\"image/png\">",
-    "  <link rel=\"apple-touch-icon\" href=\"../favicon.png\">",
-    "",
-    "</head>",
-    "<body>",
-    "  <!-- layout -->",
-    "  <div id=\"wrap\">",
-    "    <h1><a href=\"./a_00_content.html\">웹</a></h1>",
-    "    <hr />",
-    "  </div><!--#wrap-->",
-    "",
-    "  <!-- script -->",
-    "  <script>",
-    "  </script>",
-    "</body>",
-    "</html>"
-  ],
-  "description": "html_add_css"
-}
-```
-
-
-
-
-
-
-
-
-
-
+- [ ] 탭1
+- [ ] 탭2
+- [ ] 포지션 수정
+- [ ] 포지션 한 번 더
+- [ ] 모달 한 번
 
 
 

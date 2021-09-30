@@ -95,6 +95,7 @@ body{
 
 #viewBox{
 width: 100%; height: auto;
+margin-top: 150px; 
 background-color: #ddd;
 }
   #view_inner{
