@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* a_ac_position.css */
+
+#wrap{
+  position: relative;
+  width: 320px; height: 640px;
+  margin: auto;
+}
+/* headBox================================== */
+#headBox{
+  width: 100%; height: auto;
+  box-sizing: border-box;  padding: 10px;
+  background-color: #f02138;
+}
+.head_area{
+  width: 100%; height: auto;
+}
+/* menu=========================== */
+.menu_button{
+  float: left;
+  width: 60px; height: 60px;
+  background-color: #fff;
+}
+.menu_name_h{
+  float: left;
+  width: 60px; height: 60px;
+  line-height: 60px; text-indent: 10px; font-weight: 900;
+  color:#fff;
+}
+.pro_box{
+  position: fixed; left: 0; top: 70px; z-index: 100;
+  width: 250px; height: 500px;
+  background-color: #ddafff;
+}
+.user_con{
+  width: 100%; height: 100px;
+  background-color: #fff;
+}
+.unb{
+  width: 100%; height: 250px;
+}
+.settings{
+}
+.unb{
+  float:right;
+  width: auto; height: auto;
+  padding: 5px; margin-top: 10px;
+  background-color: #daa;
+}
+.unb > div {
+  float:left;
+  width: 30px; height: 30px; margin-right: 2px;
+  background-color: #fff;
+}
+.unb > div:last-child{margin-right: 0;}
+
+
+
+.headBox_bg{
+  width: 100%; height: auto;
+  margin-top: 10px;
+  color:#fff;
+}
+.headBox_bg > p:nth-child(1){
+  float: left;
+}
+.headBox_bg > p:nth-child(2){
+  float: right;
+}
+.bg{
+  width: 100%; height: 80px;
+  background-color: #f02545;
+}
+
+
+/* home====================================== */
+#home{
+  width: 100%; height: 480px;
+  padding: 10px; box-sizing: border-box;
+  background-color: #ddd;
+}
+.home_wrapper{
+  position: absolute; left: 50%; top: 120px; margin-left: -150px;
+  width: 100%; height: auto;
+}
+
+.top{
+  width: 300px; height: 120px;
+  background-color: #fff;
+}
+.bottom{
+  width: 300px; height: 100px;
+  margin-top: 10px;
+  background-color: #fff;
+  
+}
+.main_home{
+  height: 250px;
+    margin-top: 10px;
+}
+.main_home_inner{
+  width: 300px; height: auto;
+}
+.main_home_inner div{
+  float: left;
+  width: 150px; height: 120px;
+  padding: 5px; box-sizing: border-box;
+  background-color: #fff;
+  background-clip: content-box;
+}
