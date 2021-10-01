@@ -1,0 +1,153 @@
+@charset "UTF-8";
+/* z_02_webd_1.css */
+
+html, body{width: 100%; height: 100%;}
+
+#wrap{
+  width: 1200px; height: auto;
+}
+
+/* headBox
+============================================ */
+#headBox{
+  width: 100%; height: 100px;
+  box-sizing: border-box; padding: 0 30px;
+  background-color: #aaa;
+}
+h1{
+  float: left;
+  width: 200px; height: 40px;
+  margin-top: 30px;
+  text-align: center; line-height: 40px;
+  background-color: #ccc;
+}
+#navigation{
+  float: right;
+  width: 600px; height: 40px;
+  margin-top: 60px;
+  background-color: #ccc;
+}
+.gnb{
+  width: 100%; height: auto;
+}
+.gnb li{
+  float: left;
+  width: 25%; height: 40px;
+  padding: 0 4px;
+  text-align: center; line-height: 40px; font-size: 18px;
+  
+}
+.gnb a{
+  display: block;
+  width: 100%; height: 100%;
+}
+
+/* viewBox
+============================================= */
+#viewBox{
+  width: 100%; height: 300px;
+  background-color: #bbb;
+}
+
+/* conBox
+=========================================== */
+#conBox{
+  width: 100%; height: auto;
+  background-color: #aaa;
+}
+.notice{
+  float:left;
+  width: 33.333333%; height: auto;
+  padding: 10px;
+}
+.btn{
+  width: 100px; height: 20px;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
+.button button{
+  display: block;
+  width: 100%; height: 100%;
+}
+.notice_area{
+  width: 100%; height: 160px;
+  background-color: #dda;
+}
+.notice_area dt{
+  float: left;
+  width: 20%; height: 30px;
+  text-align: center; line-height:30px; font-weight: 900;
+  box-sizing:border-box; padding: 0 2px;
+}
+.notice_area dd{
+  float: left;
+  width: 80%; height: 30px;
+  line-height:30px;
+  border-bottom:1px solid #aaa;
+}
+/* madal
+============================================== */
+.modalBox{
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.madal_area{
+  position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  width: 500px; height: 400px;
+  border: 1px solid #aaa;
+  padding: 10px;  margin: auto;
+  background-color: #fff;
+}
+.modal_box dt{
+  width: 100%; height: 30px;
+  flex: 24
+  ;
+}
+.madal_bg{
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+
+.gallery{
+  float:left;
+  width: 33.333333%; height: 200px;
+  padding: 10px;
+  background-color: #ccc;
+}
+
+.gallery_area{
+  width: 100%; height: 100%;
+}
+.gallery_area li{
+  float: left;
+  width: 120px; height: 100px; 
+  background-color: #fff;
+}
+.link_banner{
+  float:right;
+  width: 33.3333333%; height: 200px;
+  padding: 10px;
+}
+
+/* footBox
+=================================== */
+#footBox{
+  width: 100%; height: auto;
+  box-sizing: border-box;  padding: 30px;
+  background-color: #bbb;
+}
+h2{
+  float: left;
+  width: 200px; height: 40px;
+}
+.compont_info{
+  float:left;
+  width: 600px; height: 40px;
+  background-color: #ddd;
+}
+.famliy_site{
+  float:right;
+  width: 200px; height: 40px;
+  background-color: #aaa;
+}
