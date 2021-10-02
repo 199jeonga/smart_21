@@ -1,0 +1,99 @@
+
+html, body{width: 100%; height: 100%;}
+#wrap{width: 1440px; height: auto;}
+
+/* headBox
+============================================================================== */
+#headBox{
+  width: 100%; height: 100px;
+  background-color: #aaa;
+}
+
+
+/* viewBox
+============================================================================== */
+#viewBox{
+  width: 100%; height: 620px;
+  background-color: #bbb;
+}
+
+
+/* mdpickBox
+============================================================================== */
+#mdpickBox{
+  width: 100%; height: 700px;
+  background-color: #aaa;
+}
+
+
+/* newbookBox
+============================================================================== */
+#newbookBox{
+  width: 100%; height: 700px;
+  background-color: #bbb;
+}
+
+
+/* dokpaBox
+============================================================================== */
+#dokpaBox{
+  width: 100%; height: 1900px;
+  background-color: #aaa;
+}
+
+
+/* awardBox
+============================================================================== */
+#awardBox{
+  width: 100%; height: 700px;
+  background-color: #bbb;
+}
+
+
+/* bookclubBox
+============================================================================== */
+#bookclubBox{
+  width: 100%; height: 715px;
+  background-color: #aaa;
+}
+
+
+/* shopBox
+============================================================================== */
+#shopBox{
+  width: 100%; height: 900px;
+  background-color: #bbb;
+}
+
+
+/* magazineBox
+============================================================================== */
+#magazineBox{
+  width: 100%; height: 700px;
+  background-color: #aaa;
+}
+
+
+/* webzineBox
+============================================================================== */
+#webzineBox{
+  width: 100%; height: 885px;
+  background-color: #bbb;
+}
+
+
+/* brandlistBox
+============================================================================== */
+#brandlistBox{
+  width: 100%; height: 720px;
+  background-color: #aaa;
+}
+
+
+/* footBox
+============================================================================== */
+#footBox{
+  width: 100%; height: 240px;
+  background-color: #bbb;
+}
+
