@@ -2,7 +2,7 @@
 
 ## 디자인
 
-[색상해상도 및 파일확장자에 대한 설명.pdf]([01.1_색상_해상도_파일형식.pdf](file:///C:/Users/82102/Documents/work/b_jeonga/smart_210901/a_asset/01.1_색상_해상도_파일형식.pdf))◀ 확인 불가능하다면 Additional data 폴더 참고</u>
+[색상해상도 및 파일확장자에 대한 설명.pdf]([01.1_색상_해상도_파일형식.pdf](file:///C:/Users/82102/Documents/work/b_jeonga/smart_210901/a_asset/01.1_색상_해상도_파일형식.pdf))◀ 확인 불가능하다면 Additional data 폴더 참고
 
 [12등분 참고 사이트](https://960.gs/)
 
