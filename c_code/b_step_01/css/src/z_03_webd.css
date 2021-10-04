@@ -1,0 +1,87 @@
+#wrap{
+  width: 1000px; height: auto;}
+  .section_wrap{
+    float: left;
+    width: 800px; height: auto;
+  }
+
+/* headBox
+============================================================ */
+#headBox{
+  float: left;
+  width: 200px; height: 650px;
+  background-color: #aaa;
+}
+h1{
+  width: 100%; height: 80px;
+  background-color: #333;
+}
+#navigation{
+  width: 100%; height: auto;
+  padding: 10px;
+  background-color: #d5d;
+}
+.gnb{
+  width: 100%; height: 500px;
+  background-color: #fff;
+}
+.gnb dt{
+  float: left;
+  width: 100%; height: 60px;
+  background-color: #a5a;
+}
+.gnb dd{
+  float: left;
+  width: 200px; height: 40px;
+  background-color: #a0a;
+}
+
+/* viewBox
+============================================================ */
+#viewBox{
+  width: 100%; height: 350px;
+  background-color: #bbb;
+}
+
+
+
+/* contentBox
+============================================================ */
+#contentBox{
+  width: 100%; height: auto;
+  background-color: #ccc;
+}
+.no_gall_wrap{
+  float: left;
+  width: 66.6667%; height: 200px;
+  padding: 10px;
+  background-color: #fff;
+}
+.notice_area{}
+.gallery_area{}
+.link_area{
+  float: left;
+  width: 33.333333; height: 200px;
+  background-color: #a1a;
+}
+
+
+/* footBox
+============================================================ */
+#footBox{
+  width: 100%; height: auto;
+  background-color: #aaa;
+}
+h2{
+  float: left;
+  width: 200px; height: 100px;
+}
+address{
+  float: left;
+  width: 400px; height: 100px;
+  background-color: #f4f;
+}
+.family_site{
+  float: left;
+  width: 200px; height: 100px;
+}
