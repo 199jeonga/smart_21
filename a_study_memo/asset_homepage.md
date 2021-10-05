@@ -32,6 +32,8 @@
 
 [외국어 웹폰트 다운로드 구글폰트](https://fonts.google.com/?subset=korean)
 
+[아이콘을 폰트로 대체해서 사용하는 사이트](https://fontawesome.com/)
+
 
 
 ## 반응형

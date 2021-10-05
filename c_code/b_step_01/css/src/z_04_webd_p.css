@@ -79,12 +79,13 @@ h1 a{
   padding: 10px 50px;
   background-color: #eee;
 }
-/*
+
 .view_area{
   width: 100%; height: 100%;
   border:1px solid #333;
   background-color: #afc;
 }
+/* 
 .view_warpper{
   width: 300%; height: 100%;
   background-color: #fca;
@@ -92,36 +93,91 @@ h1 a{
 .view_content{
   float: left;
   height: 100%; width: 33.333333%
-}
+
+같은 자리에 모여드는 형태 사용 방법
+기준-레러티브, 보여줄 요소- 앱솔루트
+처음 보여줘야 하는 요소부터 z-index를 내림차순으로 입력
+이외의 나머지는 보이지 않도록, 
 */
-.view_00{ background-color: #785BC6;}
-.view_01{ background-color: #E77E86;}
-.view_02{ background-color: #CA19F6;} 
 
-#viewBox{position: relative;}
-.view_area{
-  position: absolute; left: 0; top: 0; right: 0; bottom: 0;
-  width: 100px; height: 100px;
-  margin: auto; box-sizing: content-box;
-  border:1px solid #333;
-}
+/* 가로형 슬라이드 형태를 만들 때도 여기에 레러티브를 쓰기도 함 */
 .view_warpper{
-  width: 300%; height: 100%; background-color: #aad;
+  position: relative;  
+  width: 100%; height: 100%;
+  background-color: #fca;
 }
-.view_warpper > div{
-  float: left; 
-  width: calc(100% / 3); height: 100px;
+.view_content{
+  position: absolute; top: 0;left: 0;
+  width: 100%; height: 100%; 
+}
+.view_01{ z-index: 10; background-color: #785BC6;}
+.view_02{ z-index: 9; background-color: #E77E86;}
+.view_03{ background-color: #CA19F6;} 
 
-}
+
 
 /* conBox
 =========================================== */
 #conBox{
   float:right;
-  width: 750px; height: 200px;
+  width: 750px; height: auto;
   background-color: #aaa;
 }
+/* info_content_area-------------- */
+.info_content_area{
+  float:left; width: 50%; height: 200px;
+  padding: 10px; box-sizing: border-box;
+  background-color: #C456CA;
+}
+.tab_tltle{
+  width: 100%; height:30px; background-color: #07F7E4;
+}
+.tab_tltle li{
+  float: left; width: 100px; height: 30px; 
+}
+.tab_tltle button{
+  width: 100%; height: 100%; background-color: #fff;
+}
+.tab_tltle li.action > button{background-color: #333; color:#fff; font-weight: 700;}
+.tab_tltle button:hover{ background-color: #aaa; text-decoration: underline;}
+.tab_content{
+  width: 100%; height:150px;
+  border-top:1px solid #333;
+}
+.tab_content > div{
+  width: 100%; height: 100%; 
+  padding: 5px; box-sizing: border-box;
+  background-color: #fff;}
+/* 
+.notice{}
+.gallery{}
+ */
+.notice h3{width: 100%; height: auto; padding-bottom: 5px;}
+.notice ul{width: 100%; height: auto; max-height: 120px;}
+.notice li{
+  width: 100%; height: 18px; 
+  margin-bottom: 3px;
+  line-height: 18px; color:#575757;
+}
+.notice li::before{
+  content: "-"; color:#f06; margin-right: 3px;
+}
+/* a에 dp:b를 주지 않을 예정, line-h 는 블럭요소에 들어가야 해서 li에 줌  */
+.notice a:focus{ outline: none; text-decoration: underline; text-decoration-color: #f06;}
 
+
+/* sub_view_area-------------- */
+.sub_view_area{
+  float:left; width: 25%; height: 200px;
+  background-color: #A300CC;
+}
+
+
+/* lacation_link_area-------------- */
+.lacation_link_area{
+  float:left; width: 25%; height: 200px;
+  background-color: #8DB4D0;
+}
 
 /* footBox
 =========================================== */
