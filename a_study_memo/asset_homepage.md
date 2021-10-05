@@ -32,7 +32,7 @@
 
 [외국어 웹폰트 다운로드 구글폰트](https://fonts.google.com/?subset=korean)
 
-[fontawesome](https://fontawesome.com/) / [click,  폰트어썸 사용방법](./TIL_21-10-05.md) <a href="./TIL_21-10-05.md#fontAwesome">cilck, 폰트어썸 사용 방법</a>
+[fontawesome](https://fontawesome.com/)  /  <a href="./TIL_21-10-05.md#fontAwesome">cilck, 폰트어썸 사용 방법</a>
 
 - :+1: [iconify](https://iconify.design/), [icomoon](http://icomoon.io/) etc.
 
@@ -93,4 +93,26 @@
 [타이포라 테마 다운받기](https://theme.typora.io/theme/Pie/)
 
 [깃대신에 사용하는 깃으로 만드는 홈페이지](https://vercel.com/199jeonga/basic)
+
+
+
+
+
+
+
+---
+
+# markdown 사용방법
+
+## 원하는 파일, 구역으로 이동시킬 때
+
+클릭할 버튼이 있는 현재 위치
+
+`<a href="./파일이름#아이디명"> click, 간략한 설명 </a>`
+
+이동할 위치
+
+`<div id="아이디명"></div>`
+
+타이포라에선 잘 안 되고, 깃허브에서 제대로 작동됨!
 
