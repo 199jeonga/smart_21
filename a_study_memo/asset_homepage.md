@@ -32,7 +32,11 @@
 
 [외국어 웹폰트 다운로드 구글폰트](https://fonts.google.com/?subset=korean)
 
-[아이콘을 폰트로 대체해서 사용하는 사이트](https://fontawesome.com/)
+[fontawesome](https://fontawesome.com/) / [click,  폰트어썸 사용방법](./TIL_21-10-05.md) <a href="./TIL_21-10-05.md#fontAwesome">cilck, 폰트어썸 사용 방법</a>
+
+- :+1: [iconify](https://iconify.design/), [icomoon](http://icomoon.io/) etc.
+
+
 
 
 

@@ -160,7 +160,9 @@ h1 a{
   line-height: 18px; color:#575757;
 }
 .notice li::before{
-  content: "-"; color:#f06; margin-right: 3px;
+  content: "\f54b"; font-family: 'Font Awesome 5 Free';
+  font-weight: 900; font-size:0.5rem;
+  color:#f06; margin-right: 3px;
 }
 /* a에 dp:b를 주지 않을 예정, line-h 는 블럭요소에 들어가야 해서 li에 줌  */
 .notice a:focus{ outline: none; text-decoration: underline; text-decoration-color: #f06;}
