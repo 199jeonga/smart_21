@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* varicble.css */
+
+:root{
+  font-size: 16px;
+  /* color */
+  --color-white:#fff;
+  --color-blick:#333;
+  --color-gray1:trasparent;
+  /* --color-gray1:#eee; */
+  --color-gray2:trasparent;
+  /* --color-gray2:#ccc; */
+  --color-gray3:trasparent;
+  /* --color-gray3:#aaa; */
+  --color-gray4:trasparent;
+  /* --color-gray4:#777; */
+  --color-gray5:trasparent;
+  /* --color-gray5:#555; */
+  --color-primary:#f06;
+  --color-hover:#0af;
+  --color-focus:#047;
+  /* font */
+  --font-h2:40px;
+  --font-h3:36px;
+  --font-point:60px;
+  --font-p1:18px;
+  --font-p2:16px;
+  --font-p3:14px;
+  --font-p4:12px;
+  --font-title1:24px;
+  --font-title2:20px;
+  /* size  */
+  --width-1:1px;
+  /* border */
+  --border-l1:var(--width-1) sloid var(--color-blick);
+  --border-l2:var(--width-1) sloid var(--color-primary);
+}
+
+
+/* 변수, supports를 인지하는 브라우저는 모두 rem을 인식하지만 연습용으로 작성 */
+@supports(width:1rem){
+  :root{
+    /* font */
+    --font-h2:2.5rem;
+    --font-h3:2.25rem;
+    --font-point:3.75rem;
+    --font-p1:1.125rem;
+    --font-p2:1rem;
+    --font-p3:0.875rem;
+    --font-p4:0.75rem;
+    --font-title1:1.5rem;
+    --font-title2:1.25rem;
+    /* size  */
+    --width-1:0.0625rem;
+  }
+}
