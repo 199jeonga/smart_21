@@ -16,6 +16,16 @@
 
 
 
+## 깃
+
+[홈페이지, click, down git](https://minhaskamal.github.io/DownGit/#/home)  /
+
+[구글, 깃 폴더 다운로드 git zip](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?utm_source=chrome-ntp-icon)
+
+
+
+
+
 ## 플러그인
 
 [figma 반응형 미리 보기 무료 플러그인](https://www.figma.com/community/plugin/840727678445998968/Responsive)
@@ -23,6 +33,10 @@
 [ 크롬 -html  플러그인](https://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo/related?hl=kohttps://chrome.google.com/webstore/detail/html5-outliner/afoibpobokebhgfnknfndkgemglggomo/related?hl=ko)
 
 [크롬- html 목차 확인하는 플러그인 headingsmap](https://chrome.google.com/webstore/detail/headingsmap/flbjommegcjonpdmenkdiocclhjacmbi?hl=ko)
+
+[구글, 깃 폴더 다운로드 git zip](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn?utm_source=chrome-ntp-icon)
+
+
 
 
 
@@ -75,6 +89,12 @@
 [VScode Snippets 사용방법 안내 사이트](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
 [snippets_ json코드로 변환해주는 사이트](https://snippet-generator.app/?description=&tabtrigger=&snippet=%3C%21DOCTYPE+html%3E%0A%3C%21--t2.html--%3E%0A%3Chtml+lang%3D%22ko-KR%22+class%3D%22no-js%22%3E%0A%3Chead%3E%0A++%3Cmeta+charset%3D%22UTF-8%22%3E%0A++%3Cmeta+http-equiv%3D%22X-UA-Compatible%22+content%3D%22IE%3Dedge%22%3E%0A++%3Cmeta+name%3D%22viewport%22+content%3D%22width%3Ddevice-width%2C+initial-scale%3D1.0%22%3E%0A++%3Cscript+src%3D%22..%2Fjs%2Fcommen%2Fmodernizr-custom.js%22%3E%3C%2Fscript%3E%0A++%3Clink+rel%3D%22stylesheet%22+href%3D%22..%2Fcss%2Fsrc%2Ft2.css%22%3E%0A++%3Ctitle%3EDocument%3C%2Ftitle%3E%0A++%3Clink+rel%3D%22shortcut+icon%22+href%3D%22favicon.png%22+type%3D%22image%2Fpng%22%3E%0A++%3Clink+rel%3D%22apple-touch-icon%22+href%3D%22favicon.png%22%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A++%3C%21--layout--%3E%0A%3Cdiv+id%3D%22wrap%22%3E%0A%3C%2Fdiv%3E%0A++%3C%21--script--%3E%0A++%3Cscript%3E%3C%2Fscript%3E%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E&mode=vscode)
+
+[click, font converter 폰트 웹폰트로 변경](https://transfonter.org/)
+
+
+
+
 
 
 
