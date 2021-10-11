@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- f_03_slide_banner.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/f_03_slide_banner.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">웹</a></h1>
+    
+    <div class="slide">
+      <h2>slide position</h2>
+      <div class="slide_wrapper position_slide">
+        <div class="btn">
+          <button class="next">next</button>
+          <button class="prev">prev</button>
+        </div>
+        <div class="indicator" hidden>
+          <ul>
+            <li class="action"><a href="#"><span class="blind">01</span></a></li>
+            <li><a href="#"><span class="blind">02</span></a></li>
+            <li><a href="#"><span class="blind">03</span></a></li>
+            <li><a href="#"><span class="blind">04</span></a></li>
+            <li><a href="#"><span class="blind">05</span></a></li>
+          </ul>
+        </div><!--indicator-->
+        <div class="slide_content">
+          <div class="slide_con_wrap">
+            <div class="slide_01 action"><a href="#">slide_01</a></div>
+            <div class="slide_02"><a href="#">slide_02</a></div>
+            <div class="slide_03"><a href="#">slide_03</a></div>
+            <div class="slide_04"><a href="#">slide_04</a></div>
+            <div class="slide_05"><a href="#">slide_05</a></div>
+          </div>
+        </div><!--slide_content-->
+      </div><!--slide_wrapper-->
+      <!--====================================================================-->
+      <div class="slide" hidden>
+        <h2>slide horizontal</h2>
+        <div class="slide_wrapper horizontal_slide">
+          <div class="btn">
+            <button class="next">next</button>
+            <button class="prev">prev</button>
+          </div>
+          <div class="indicator">
+            <ul>
+              <li class="action"><a href="#"><span class="blind">01</span></a></li>
+              <li><a href="#"><span class="blind">02</span></a></li>
+              <li><a href="#"><span class="blind">03</span></a></li>
+              <li><a href="#"><span class="blind">04</span></a></li>
+              <li><a href="#"><span class="blind">05</span></a></li>
+            </ul>
+          </div><!--indicator-->
+          <div class="slide_content">
+            <div class="slide_con_wrap">
+              <div class="slide_01"><a href="#">slide_01</a></div>
+              <div class="slide_02"><a href="#">slide_02</a></div>
+              <div class="slide_03"><a href="#">slide_03</a></div>
+              <div class="slide_04"><a href="#">slide_04</a></div>
+              <div class="slide_05"><a href="#">slide_05</a></div>
+            </div>
+          </div><!--slide_content-->
+        </div><!--slide_wrapper-->
+      </div>
+    </div><!--slide-->
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <!-- <script src="../js/src/c_03_slide_banner.js"> -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="../js/c_03_slide_banner_from_JQ.js"></script>
+</body>
+</html>
