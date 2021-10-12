@@ -92,6 +92,8 @@
 
 [click, font converter 폰트 웹폰트로 변경](https://transfonter.org/)
 
+[click, 프로토타입 제작을 위한 글씨가 써진 기본틀 e.g lorem](https://placeholder.com/)
+
 
 
 
