@@ -1,0 +1,163 @@
+html, body{width: 100%; height: 100%;
+  font-family: 'Noto Sans KR', sans-serif;}
+
+/* wrap
+========================================================== */
+#wrap{
+position: relative; 
+width:980px; height: auto;
+padding-top: 30px;
+border:1px solid #333;
+}
+
+/* geadBox
+========================================================== */
+#headBox{
+float: left;
+width:250px; height:710px;
+padding-top: 60px;
+background-color: #bbb;
+}
+.head_inner{
+  width: 153px; height: auto;
+  margin: 0 auto;
+}
+h1{width: 100%; height: auto; margin-bottom: 40px;}
+.gnb{
+  width: 100%; height: auto;
+  text-transform:uppercase; color:#fff;
+  margin-bottom: 10px;
+}
+.gnb ul{width: 100%; height: auto;}
+.gnb li {
+  width: 100%; height: 60px;
+  border-bottom:4px solid #fff;
+}
+.gnb a {
+  display: block;
+  width: 100%; height: 100%;
+  text-indent:10px; font-size: 32px; line-height:60px;
+}
+.gnb_list:after, .gnb_list::after{
+  content:"";
+  width: 20px; height: 20px;
+  background-color: #727;
+}
+.qna {
+float: right;
+width: auto; height: auto;}
+/* .qna img */
+
+
+
+/* viewBox
+========================================================== */
+#viewBox{
+float: left;
+width: 730px; height: 710px;
+padding-right: 50px; padding-bottom: 60px;
+background-color: #588;
+}
+.viewBox_inner{
+  width: 100%; height: 100%;
+  background-color: #aaa;
+}
+
+
+/* sideBox
+========================================================== */
+#sideBox{
+  position: absolute; top: 0; left: 0;
+  width: 100%; height: 30px;
+  background-color: #888;
+  }
+.sideBox_inner{
+  float: right;
+  width: auto; height: 100%;
+}
+.side_nav{width: 100%; height: 100%;}
+.side_nav li{
+  float: left;
+  width: 100px; height: 100%;
+  color:#fff;
+  text-transform: uppercase;
+}
+.side_nav a{
+  display: block;
+  text-align:center; line-height:30px;
+  width: 100%; height: 100%;
+}
+.home{
+  background-color: #888;
+}
+.study{
+  background-color: #555;
+}
+.side_nav .education{
+  width: 250px;
+  color:#555; 
+  background-color: #fff30d;
+}
+.side_nav .education a{
+  text-align:left; text-indent:10px;
+}
+
+
+
+/* footBox
+========================================================== */
+#footBox{
+clear: both;
+width: 100%; height: 110px;
+padding: 0 40px; padding-top: 10px;
+}
+.footBox_inner{
+  width: 900px; height: auto; min-height: 90px;
+}
+h2{
+  float: left;
+  width: 78px; height: auto; min-height: 30px;
+  margin-right: 30px;
+}
+.location{
+  float: left;
+  width: auto; height: auto;
+  margin-right: 30px; padding-top: 10px;
+}
+.location div{
+  float: left;
+  width: auto; height: 100%;
+}
+.location div:first-child{margin-right: 10px;}
+
+address{
+  float: left;
+  width: 320px; height: auto;
+  padding-top: 5px;
+}
+address p{
+  width: 100%; height: auto;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+address span{text-transform:uppercase;}
+.portfolio_link{
+  float:right;
+  width: 300px; height: auto;
+}
+.portfolio_link dl {width: 100%; height: auto; color:#fff;}
+.portfolio_link dt {
+  float: left; 
+  width: 100px; height:30px; 
+  text-align:center;
+  border-bottom:1px solid #fff;
+  background-color: #555;
+}
+.portfolio_link dd {float: left; width: 200px; height:30px;}
+.webpage dd{background-color: #baa50c;}
+.portfolio dd{ color:#555; background-color: #fff30d;}
+.portfolio_link p{
+  width: 100%; height: auto;
+  text-align:right; font-size: 12px;
+  margin-top: 10px;
+}
