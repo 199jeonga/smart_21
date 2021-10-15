@@ -94,6 +94,8 @@
 
 [click, 프로토타입 제작을 위한 글씨가 써진 기본틀 e.g lorem](https://placeholder.com/)
 
+[click, css sprite generator - 여러개의 아이콘 이미지 파일을 한개의 이미지로 만드는 방법](https://www.toptal.com/developers/css/sprite-generator/)
+
 
 
 

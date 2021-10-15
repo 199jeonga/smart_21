@@ -1,0 +1,110 @@
+
+#wrap {
+  width: 56.25rem; height: auto;
+  padding-bottom: 62.5rem;
+  box-sizing:content-box;
+}
+
+.part {
+  width: 100%; height: 45rem;
+  border-bottom:0.0625rem solid #777;
+}
+
+.box > div {
+  float:left;
+  width: 21.875rem; height:12.5rem;
+  margin:1.875rem;
+  text-align: center; line-height: 12.5rem;
+  background-color: #ddd;
+}
+
+.box_shadow_01{
+  box-shadow: 5px 5px 5px #077;
+}
+.box_shadow_02{
+  box-shadow: 0px 0px 5px 5px #077;
+}
+.box_shadow_03{
+  box-shadow:inset 5px 5px 5px #777;
+}
+.box .box_shadow_04{
+  box-shadow:
+    0 0 30px #777,
+    -5px -5px 5px #555,
+    10px 10px 10px #add,
+    inset 0 0 15px #cda;
+}
+
+
+.box .star{
+  width: 3px; height: 3px; background-color: #aae;
+  box-shadow: 15px 15px #adf, 50px 80px #067, 140px 300px 10px #7a0, -40px -20px #dda;
+  position: fixed;
+  animation: star 3000ms alternate 4 ease-in;
+}
+@keyframes star{
+  0% {top:-100px; right: -200px;}
+  100% {top: 100%; right: 100%;}
+}
+
+
+
+
+
+.text > div{
+  width:100%; height:9.375rem;
+  margin-bottom:0.625rem;
+  font-size:3rem; font-weight: 700;
+  text-align: center;
+  background-color: #ddd;
+}
+.text_shadow_01{
+  text-shadow: 5px 5px 5px #777;
+}
+.text_shadow_02{
+  text-shadow: 5px 5px #47a, 10px 4px #fa0;
+  color: rgba(255,255,255,0.5);
+}
+.part .text_shadow_03{
+  background-image: url("../../img/background/backround_01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  color:#fff; font-size: 5rem;
+  background-clip: text;
+  -webkit-text-fill-color:transparent;
+}
+
+
+
+.image > div{
+  float:left;
+  width: 200px; height: 200px;
+  margin: 50px;
+  border-radius: 100%;
+  /* background-color: #ccc; */
+  background-image: url("../../img/icon/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 50%;
+}
+
+.img_shadow_01{
+  box-shadow: 5px 5px 5px #333; 
+}
+.img_shadow_02{
+  filter:drop-shadow(5px 5px 5px #333);
+}
+.img_shadow_03{
+  filter:blur(10px) grayscale(0.8);
+  transition: all 200ms linear;
+}
+.img_shadow_03:hover{
+  filter:blur(0) grayscale(0);
+}
+.img_shadow_04{
+  filter:hue-rotate(180deg);
+}
+
+
