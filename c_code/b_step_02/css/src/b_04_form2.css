@@ -60,13 +60,9 @@ fieldset:last-of-type{margin-bottom: 0;}
   width: 26px; height: 100%;
   text-align: center; font-size: 1.1rem; color:#777; line-height: 2;
 }
-.member input:focus + label{
-  color:#222;
-}
+.member input:focus + label{color:#222;}
 .member input:focus{background-color: #eee; outline: 0;}
-
 .member input::placeholder{color:#66a}
-
 
 /* ====================================================== */
 .mamber_status{
@@ -79,8 +75,8 @@ label[for="stateCheck"]{
 label[for="stateCheck"] > i{
   font-size: 1.3rem; margin-right: 0.3rem;
 }
-/* #stateCheck:checked + label{color:#f55; font-weight: 700;} */
-#stateCheck:checked + label > i{color:#f55; font-weight: 700;}
+#stateCheck:checked + label{color:#f55; font-weight: 700;}
+/* #stateCheck:checked + label > i{color:#f55; font-weight: 700;} */
 
 
 
