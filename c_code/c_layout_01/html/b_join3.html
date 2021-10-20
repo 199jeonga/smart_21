@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!-- b_join3.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_join3.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">웹</a></h1>
+    <div id="join">
+      <h2><span class="blind">네이버</span></h2>
+      <div id="joinBox">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend class="blind">회원가입하기</legend>
+            <ul class="customerInfo">
+              <li>
+                <h3>아이디</h3>
+                <div>
+                  <input type="text" id="userId" value="" name="user__id">
+                  <label for="userId" method="POST">@naver.com</label>
+                </div>
+              </li>
+
+              <li>
+                <h3>비밀번호</h3>
+                <div>
+                  <input type="password" id="userPw" value="" name="user__pw">
+                  <label for="userPw" method="POST">비밀번호</label>
+                </div>
+              </li>
+
+              <li>
+                <h3>비밀번호 재확인</h3>
+                <div>
+                  <input type="password" id="userPwRe" value="" name="user__pw__re">
+                  <label for="userPwRe" method="POST">비밀번호재확인</label>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="userInfo">
+              <li>
+                <h3>이름</h3>
+                <div>
+                  <label for="userName" method="POST" class="blind">이름</label>
+                  <input type="text" id="userName" value="" name="user__name">
+                </div>
+              </li>
+              <li>
+                <h3>생년월일</h3>
+                <div>
+                  <label for="birthdayYy" method="POST" class="blind">생년월일</label>
+                  <input type="text" id="birthdayYy" value="" name="birthdat__yy" placeholder="년(4자)">
+                  <section id="birthdayMm" value="" name="birthday__mm">
+                    <option value selected>월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                  </section>
+                  <input type="text" id="birthdayDd" value="" name="birthday__dd">
+                </div>
+              </li>
+              <li>
+                <h3>성별</h3>
+                <div>
+                  <select id="gender" value="" name="gender">
+                    <option value selected>성별</option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                    <option value="U">선택안함</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <h3>본인확인 이메일<span>(선택)</span></h3>
+                <div>
+                  <label for="checkEmail" method="POST" class="blind">본인확인 이메일</label>
+                  <input type="text" id="checkEmail" value="" name="check__email" placeholder="선택입력">
+                </div>
+              </li>
+            </ul>
+
+            <ul class="phoneNumberBox">
+              <li>
+                <h3>휴대전화</h3>
+                <div>
+                  <select id="country" value="" name="contry">
+                    <option value selected>대한민국 +82</option>
+                    <option value="A">몰라</option>
+                    <option value="B">몰라2</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="#" method="POST" class="blind">인증번호 보내기</label>
+                  <input type="text" id="phoneNumner" value="" name="phone__number" placeholder="전화번호 입력">
+                </div>
+                <div>
+                  <label for="checkNumer" method="POST" class="blind">인증번호 확인</label>
+                  <input type="text" id="checkNumer" value="" name="check__number" placeholder="인증번호 입력하세요.">
+                </div>
+              </li>
+            </ul>
+
+            <input type="submit" value="가입하기">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>

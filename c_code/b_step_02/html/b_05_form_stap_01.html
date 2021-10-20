@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- b_05_form_stap_01.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_05_form_stap_01.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">웹</a></h1>
+
+    <!--form 문서 -->
+    <h2>form 이해</h2>
+    <form action="#" method="POST"  hidden>
+    <fieldset>
+      <legend>입력형태, 특수형</legend>
+      <div><input type="hidden" name="sendName" value="advw" /></div>
+      <div>
+        <label for="idText">입력할 내용 작성설명</label>
+        <input type="text" name="id__text" id="idText" value="" placeholder="입력할 사하 ㅇ예시" maxlength="10">
+      </div>
+      <div>
+        <label for="pwText">숨겨지는 글자 성명</label>
+        <input type="password" name="pw__text" id="pwText" value="" placeholder="입력할 사하 ㅇ예시" maxlength="10">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>체크항목</legend>
+      <div>
+        <h3>type-radio</h3>
+        <p>다음중 가장 쉬운 언어는 무엇일까요?</p>
+        <ul>
+          <li>
+            <input type="radio" id="radio_01" name="radio__select" value="javascript" checked />
+            <label for="radio_01">javascript</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="radio" id="radio_02" name="radio__select" value="python" checked/>
+            <label for="radio_02">python</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="radio" id="radio_03" name="radio__select" value="java" />
+            <label for="radio_03">java</label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <input type="radio" id="radio_04" name="radio__select" value="c++" />
+            <label for="radio_04">c++</label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>type-checkbox</h3>
+        <p>주말에 먹고싶은 음식</p>
+        <ul>
+          <li>
+            <input type="checkbox" id="check_01" name="check__selet" value="제육" checked/>
+            <label for="check_01">제육</label>
+          </li>
+          <li>
+            <input type="checkbox" id="check_02" name="check__selet" value="볶음" checked/>
+            <label for="check_02">볶음</label>
+          </li>
+          <li>
+            <input type="checkbox" id="check_03" name="check__selet" value="보쌈" />
+            <label for="check_03">보쌈</label>
+          </li>
+          <li>
+            <input type="checkbox" id="check_04" name="check__selet" value="오징어" />
+            <label for="check_04">오징어</label>
+          </li>
+        </ul>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>버튼형식</legend>
+      <input type="reset" value="취소"><br />
+      <input type="submit" value="동의 및 전송"><br />
+      <del><input type="image" src="../img/001.png" alt="동의 및 전송"></del><br />
+      <input type="button" value="다음 내용 보기" /><br/>
+      <input type="file" name="" value="" id="fileSelect"/>
+      <label for="fileSelect">전송할 파일을 선택하세요.</label>
+      
+
+
+      <!--버튼에서 내용상 구분이 되어야 하는 항목에선 시각형태로도 구분이 되게 처리해야 한다.-->
+    </fieldset>
+
+    <fieldset>
+      <legend>멀티형식</legend>
+      <div>
+        <label for="multiLine">여러줄 작성 가능한 요소 설명</label>
+        <textarea name="multi__line" id="multiLine" readonly></textarea>
+      </div>
+      <div>
+        <label for="selectProduct">구매할 제품을 선택하세요.</label>
+        <select name="select__Product" id="selectProduct">
+          <option selected>선택하세요</option>
+          <option value="a">a</option>
+          <option value="b">b</option>
+          <option value="c">c</option>
+          <option value="d">d</option>
+        </select>
+
+        <!-- <label for="mySelect">선택한 내용을</label> -->
+        <input type="hidden" id="mySelect" name="my__Select" value="" />
+        <dl class="like_selcet">
+          <dt>상품을 선택하세요.</dt>
+          <dd>
+            <ul>
+              <li data-select="마우스">마우스</li>
+              <li data-select="키보드">키보드</li>
+              <li data-select="스마트폰">스마트폰</li>
+              <li data-select="태블릿">태블릿</li>
+              <li data-select="노트북">노트북</li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+
+      <div>
+        <button type="submit">확인</button>
+        <button type="reset">취소</button>
+        <button type="button">버튼</button>
+      </div>
+    </fieldset>
+    </form>
+<div class="other">
+  <label for="year">태어난 연도를 선택하세요.</label>
+  <select name="select" id="year"></select>
+</div>
+
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <script>
+    // var yearSelector = document.querySelector('#year');
+
+    // var creatOption = document.createElement('option');
+    // var y = 2021
+    // creatOption.innerText = y+'년';
+    // creatOption.value = y; 
+
+    // yearSelector.append( creatOption );
+
+    var yearSelector = document.querySelector('#year');
+    var y = 2021;
+    var creatOption;
+    var makeFn = function(){
+      creatOption = document.createElement('option');
+      creatOption.innerText = y + '년';
+      creatOption.value = y;
+      yearSelector.append(creatOption)
+    };
+
+// 틀 수행
+    // makeFn()
+    // y = y -1;
+
+    for(; y > 1870; y = y -1){
+      makeFn()
+    }
+
+  </script>
+</body>
+</html>

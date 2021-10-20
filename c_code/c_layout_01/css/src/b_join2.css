@@ -1,0 +1,54 @@
+
+#wrap{
+  width: 600px; height: auto;
+}
+h1{
+  width: 100%; height: 50px; padding: 1rem;
+}
+h1>a{ display: block; width: 70px; height: 100%; color: #325dff; font-size: 2rem;}
+
+#signUp{
+  width: 500px; height: auto; margin: auto; padding: 5px; margin-top: 50px;
+}
+h2{
+  width: 100%; height: auto; margin-bottom: 25px; font-size: 1.357rem;
+}
+.sign_content{
+  width: 100%; height: auto; min-height: 500px;
+}
+
+/* ========================== */
+
+.make_account{width: 100%; height: 355px;}
+  .input_text{
+    width: 100%; height: 192px; margin-bottom: 20px;
+  }
+  .input_text ul{width: 100%; height: auto;}
+  .input_text li{
+    width: 100%; height: 40px; 
+    margin-bottom: 12px;}
+    
+  .input_text li:last-child{margin-bottom: 0px;}
+  .input_text input{
+    width: 100%; height: 100%; 
+    padding: 0 0.5rem; box-sizing: border-box;
+    text-indent: 0.5rem; color:#676767;
+    border:1px solid #777; border-radius: 4px;
+    background-color: #eee;
+  }
+  .make_btn{width: 100%; height: 40px; padding: 1rem 0; box-sizing: content-box;}
+  .make_btn>button{
+    width: 100%; height: 100%; 
+    color:#fff; font-size: 1rem; font-weight: 600;
+    border-radius: 0.3rem; box-shadow: 0 0.3rem 0.3rem rgba(50, 93, 255, 0.616);
+    background-color: #325dff;
+    }
+    .make_btn>button:hover{
+      transform: translateY(-0.3rem); background-color: #a9bcff; color:#333;
+      box-shadow: 0 0.3rem 0.3rem rgba(50, 93, 255, 0.616);
+    }
+    .make_btn>button:focus{outline:3px solid #22367e; font-size: 1.3rem;}
+/* =============================== */
+p{width: 100%; height: auto; padding: 15px 0; font-size: 0.875rem; font-weight: 400;}
+p>a{font-size: 1rem; color:#325dff; font-weight: 500;}
+.sign_content > p:last-of-type{text-align: center;}
