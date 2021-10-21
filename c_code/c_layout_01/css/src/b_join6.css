@@ -20,7 +20,6 @@ h1 a{display: block; width: 100%; height: 100%; text-align: center;}
 #loginBox{
   width: 520px; height: auto; min-height: 220px;
   margin:auto; padding: 0 30px; box-sizing: border-box;
-  background-color: #eee;
 }
 .privite{  width: 100%; height: auto;}
 .privite ul{width: 100%; height: auto;}
@@ -33,14 +32,15 @@ h1 a{display: block; width: 100%; height: 100%; text-align: center;}
 .privite li:last-child{margin-bottom: 0;}
 .privite li label{ 
   /* position: absolute; */
-  float: left; display: block; 
+  float: left;
   width: 50px; height: 48px; 
   color:#575757; font-size: 1.2rem; text-align: center; line-height: 50px;
+  background-color: #ddd;
   border:0;  border-right: 1px solid #ccc;
 }
 .privite li input{
-  float: left; width: calc(100% - 50px); height: 100%;
-  padding: 12px 10px; padding-right: 50px;
+  float: left; width: calc(100% - 120px); height: 100%;
+  padding: 12px 10px;
 }
 .privite li button{
   /* position: absolute; top: 0; right: 0; */
@@ -54,29 +54,26 @@ h1 a{display: block; width: 100%; height: 100%; text-align: center;}
 .enable > i.fa-eye{display: none;}
 
 /* ===================== */
-.check{
-  width: 100%; height: 50px;
-  padding-top: 0.5rem;
-}
-.check label{
+
+.check {width: 100%; height:50px; padding-top: 0.5rem;}
+.check label { float:left; cursor: pointer;}
+.check label i { 
   float: left;
-  cursor: pointer;
+  width:20px; height: 20px;
+  margin-right: 0.3rem; margin-top:0.35rem;
+  border:1px solid #777; 
+  background-image: url("../../img/check.png");
+  background-position: 0 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-out;
 }
-.check label i{
-  /* 
-  display: inline-block; 
-  width: 20px; height: 20px;
-    */
-    padding: 0 15px;
-  margin-right: 0.3rem;
-  border:1px solid #777;
+#autoLogin:checked + label > i { 
+background-position: 0 0;
 }
-.check a{
-  float:right;
-  color:#0074e9;
-}
-.check a i{font-weight: 700;}
-#autoLogin:checked + label > i{outline: 4px solid #0074e9; background-color: #dff; border-color:transparent;}
+#autoLogin:checked + label > i::before { top: 0; }
+.check a { float:right; color:#0074e9;} 
+.check a i { font-weight: 700; }
 
 
 /* ===================== */
