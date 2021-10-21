@@ -72,7 +72,6 @@ input{
 }
 /* #birthdayYy{} */
 #birthdayMm dl{
-  position: relative;
   width: 100%; height: auto;
 }
 #birthdayMm dt{
@@ -84,8 +83,9 @@ input{
 }
 #birthdayMm dd{
   display: none;
-  position: absolute; top: 40px; left: -15px;
+  position: relative;
   width: calc(100% + 30px); height: auto;
+  margin-left: -15px;
   text-indent: 20px;
   background-color: #fff;
   border:1px solid #ccc; border-top: 0;
@@ -113,9 +113,6 @@ select{
   border:1px solid #ccc; background-color: #fff;
 }
 
-.con_area #phoneNumner{
-
-}
 .check_btn{
   float:right;
   width: 28%; height: 50px;
