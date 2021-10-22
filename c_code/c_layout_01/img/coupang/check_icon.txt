@@ -1,0 +1,15 @@
+이미지 64px
+전체 2px padding 처리되어있음
+아이콘의 간격 4px
+
+/*비활성화된 아이콘 */
+.bg-001_check {
+    width: 64px; height: 64px;
+    background: url('check_icon.png') -10px -10px;
+}
+
+/*체크된 아이콘 */
+.bg-002_checked {
+    width: 64px; height: 64px;
+    background: url('check_icon.png') -94px -10px;
+}
