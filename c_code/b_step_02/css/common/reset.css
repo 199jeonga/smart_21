@@ -10,7 +10,8 @@ h1,h2,h3,h4,h5,h6,
 p,pre,blockquote,address,
 ul,dl,li,ol,dt,dd,
 hr,button,img, div
-header, article, nav, section, footer, aside, main, figure, figcaption, hgroup{
+header, article, nav, section, footer, aside, main, figure, figcaption, hgroup,
+form, fieldset,textarea{
   margin: 0; padding: 0; border:0; font-size: 100%;
   box-sizing: border-box;
 }
@@ -25,3 +26,5 @@ table, tr, td, th, thead, tbody, tfoot{
   border:1px solid #777; border-spacing: 0; border-collapse: collapse;
 }
 header, article, nav, section, footer, aside, main, figure, figcaption, hgroup{display: block;}
+legend{width: 0; height: 0;padding: 0; border: 0; overflow: hidden;}
+textarea{resize: none; cursor: text;}
