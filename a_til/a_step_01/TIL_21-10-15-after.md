@@ -47,6 +47,3 @@
 
 - `.gnb a:hover{background-position-x: 100%;}` ▶ x값을 calc로 수정이 가능하다고 함. 
   - 나중에 정아가 해주겠지.
-
-
-
