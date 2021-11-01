@@ -1,0 +1,22 @@
+
+/* mw960px */
+@media all and (min-width:769px) {
+  #headBox{background-color: #fd0;}
+  h1{ float: left; width: 100px; height: 100px; background-color: #aca;}
+  #gnbBox{
+    float: right; width: 400px; height: 50px; margin-top: 40px; background-color: #fff;
+  }
+  .nav_btn{display: none;}
+  .global_nav{width: 100%; height: 100%;}
+  .global_nav li{
+    float: left; width: 80px; height: 100%; margin-left: 20px;
+  }
+  .global_nav li:first-child{margin-left: 0;}
+  #viewBox{height: 450px;}
+  #conBox{height: 600px;}
+  #conBox li{width: 50%; height: 50%;}
+  #otherBox{display: none;}
+    .info_area{width: 100%; height: 100px; background-color: #fc0;}
+    .notice_area{width: 100%; height: 200px; background-color: #afa;}
+  /* #footBox{} */
+}/* mw960px */
