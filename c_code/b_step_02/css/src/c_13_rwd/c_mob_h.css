@@ -1,0 +1,14 @@
+@media all and (min-width:480px) and (max-width:767px) {
+
+  #headBox{height:60px;}
+  h1{width: 100px; height: 30px;}
+  .nav{margin-top: 5px;}
+  .costmerinfo_area{width: 24px; height: 25px; margin-right: 10px; }
+  .nav_icon{width: 30px; height: 25px;}
+
+  #viewBox{ height: 720px; height: 150vw; min-height: 720px; }
+  #contnetBox{ height: 720px; height: 150vw; min-height: 720px;  }
+  #infoBox{ height: 720px; height: 150vw; min-height: 720px; }
+  #footBox{ height: 60px; }
+
+} /* (min-width:480px) and (max-width:767px), design:480px*/
