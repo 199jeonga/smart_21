@@ -1,4 +1,4 @@
  // b_01_js_vriable.js
 
-var num = 0;
-var n;
+var text = '글자입력';
+console.log(text);
