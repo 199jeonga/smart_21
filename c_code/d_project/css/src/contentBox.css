@@ -1,0 +1,39 @@
+#contenBox {
+  width: 100%;
+  height: 1000px;
+  background-color: #0613CF;
+}
+
+.title_area {
+  width: 100%;
+  height: 250px;
+  padding: 92px;
+  padding-bottom: 17px;
+  background-color: #ade;
+}
+
+.title_area .container {
+  height: auto;
+}
+
+.menu_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 57px;
+  padding-bottom: 20px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #aaa;
+}
+
+.menu_content {
+  width: 100%;
+  height: auto;
+}
