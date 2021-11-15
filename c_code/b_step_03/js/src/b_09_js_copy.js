@@ -76,8 +76,6 @@ var colnePc = {};
 
 // 문제 1: 깊은 복사를 한 뒤, 원하는 제품 하나를 추가하세요.
 var cookie = ['초코칩', '칙촉', '빼빼로', '호빵', '촉촉한초코칩', '칸초', '홈런볼', '엄마손'];
-var snack= {'농심': '새우깡', '해태': '맛동산', '오리온': '고래밥', '크라운': '산도'};
-var ice = [{'롯데': ['폴라포', '수박바']}, {'해태': '브라보'}, {'허쉬': '민트초코'}, {'빙그레': '투게더'}];
 
 
 
@@ -92,7 +90,9 @@ cookie2.push('쿠키투에 넣을 것')
 
 console.log(cookie, cookie2);
 
+//==========================================================
 
+var snack= {'농심': '새우깡', '해태': '맛동산', '오리온': '고래밥', '크라운': '산도'};
 
 var snack2 = {};
 for(var y in snack){
@@ -105,22 +105,25 @@ snack2['스낵투에 넣을래'] = 'snack2임';
 console.log(snack, snack2)
 
 
+
+//==========================================================
+var ice = [{'롯데': ['폴라포', '수박바']}, {'해태': '브라보'}, {'허쉬': '민트초코'}, {'빙그레': '투게더'}];
+
 var ice2 = [];
-var icelen = ice.length;
+// var icelen = ice.length;
 var iceCon = {};
 
-var e=0;
-if( e<icelen ){
-  for( ; e<icelen ; e++){
+
+// if( e < ice.length ){
+  for( e = 0 ; e < ice.length ; e++){
     ice2[e]=ice[e];
   }
-}else{
-}
-
-ice.push(ice[e]);
-ice[e]=ice['ice1 프로퍼티']='ice1에 넣는 값';
-// 
-// ice2.ice22Add='ice2에 넣는 값';
+// }else{
+  ice['ice22Add'] = 'ice2에 넣는 값';
+// }
+// ice.push(ice[e]);
+// ice[e]=ice['ice1 프로퍼티']='ice1에 넣는 값';
+// ice2.push('iceCon');
 
 console.log(ice);
 console.log(ice2);
