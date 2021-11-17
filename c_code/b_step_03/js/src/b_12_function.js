@@ -71,3 +71,6 @@ var day = date.getDate();
 
 
 console.log( year, month, day);
+
+
+// after shcool ------------------------------------------
