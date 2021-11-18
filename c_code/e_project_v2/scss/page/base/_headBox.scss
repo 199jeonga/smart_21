@@ -1,10 +1,14 @@
-//headBox.scss
+// headBox
+$headH:50 !global;
+$headH2:$headH *2;
 
-// !default - 이 변수의 값을 기본값으로 설정할 것이다.
-$headH: 50px !global;
-$headH2: #{$headH * 2};
+@at-root #headBox {
+  position: fixed; top: 0; left: 0; z-index:1000;
+  width: 100%; height: $headH ; background-color: #fff;
 
-#headBox{
-  position: fixed; top:0; left: 0; z-index: 1000;
-  width: 100%; height: $headH; background-color: #fff;
+  // @include mobile{}
+  @include tablet{ @include remUnit(height,$headH); }
+  @include laptop{ @include remUnit(height,$headH2); }
+  @include pc{ @include remUnit(height,$headH2); }
+  
 }
