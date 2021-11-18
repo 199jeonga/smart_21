@@ -1,0 +1,12 @@
+// newBox.scss
+$newH1:600px;
+$newH2:700px;
+
+#newBox{
+  width:100%; height:100vh;
+  background-color:#add;
+  @include mobile{padding-top:$newH1; }
+  @include tablet{padding-top:$newH1; height:450px;}
+  @include laptop{padding-top:$newH2; height:newH1;}
+  @include pc{padding-top:$newH2; height:newH1;}
+}

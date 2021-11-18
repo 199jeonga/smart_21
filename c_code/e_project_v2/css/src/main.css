@@ -1,13 +1,96 @@
 /* main.css */
-body {
+#wrap {
+  width: 100%;
+  height: auto;
+  min-height: 800px;
+  background-color: #ddd;
+}
+@media all and (max-width: 599px) {
+  #wrap {
+    min-width: 320px;
+    background-color: #fda;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #wrap {
+    background-color: #adf;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  #wrap {
+    background-color: #fdf;
+  }
+}
+@media all and (min-width: 1440px) {
+  #wrap {
+    background-color: #dfd;
+  }
+}
+
+#headBox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 50px;
   background-color: #fff;
 }
 
-h1 {
-  font-size: 40px;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: -0.006em;
+#slideBox {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #fff;
+}
+@media all and (max-width: 599px) {
+  #slideBox {
+    padding-top: 50px;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #slideBox {
+    padding-top: 50px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  #slideBox {
+    padding-top: 100px;
+  }
+}
+@media all and (min-width: 1440px) {
+  #slideBox {
+    padding-top: 100px;
+  }
+}
+
+#newBox {
+  width: 100%;
+  height: 100vh;
+  background-color: #add;
+}
+@media all and (max-width: 599px) {
+  #newBox {
+    padding-top: 600px;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  #newBox {
+    padding-top: 600px;
+    height: 450px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1439px) {
+  #newBox {
+    padding-top: 700px;
+    height: newH1;
+  }
+}
+@media all and (min-width: 1440px) {
+  #newBox {
+    padding-top: 700px;
+    height: newH1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -3,8 +3,46 @@
 
 @import "../common/variable";
 @import "../common/mixin";
+//----------------------------------
+$headH : 0;
+$headH2 :0;
 
-body { background-color: #fff;}
-h1{
-  @include text_option($size:title2, $weight:1, $line:true)
-}
+//url 단축으로 설정하려고 했으나 실패함!
+// $urlCommon : "../page/common/";
+// $urlMain : "../page/main/";
+// $importMain : ("newBox","commercialBox","bestBox","galleryBox","sponsorBox","footBox")
+//----------------------------------
+#wrap{
+  width: 100%; height: auto; min-height: 800px;
+  background-color: #ddd;
+  @include mobile{min-width: 320px; background-color: #fda; }
+  @include tablet{background-color: #adf;}
+  @include laptop{background-color: #fdf; }
+  @include pc{ background-color: #dfd;}
+}//#wrap
+
+// at-root를 사용했기 때문에 css에서는 외부로 빠졌는데! 
+// wrap 내부에 있다는 것을 직관적으로 보여주기 위해 
+// 굳!이! #wrap에 작성함! -> 이제 수정함
+
+// wrap 내부에 있는 파일 =================
+@import "../page/base/headBox"; 
+
+@import "../page/main/slideBox";
+@import "../page/main/newBox";
+@import "../page/main/commercialBox";
+@import "../page/main/bestBox";
+@import "../page/main/galleryBox";
+@import "../page/main/sponsorBox";
+
+@import "../page/base/footBox"; 
+// wrap 내부에 있는 파일 =================
+
+
+
+  // #newBox{}
+  // #commercialBox{}
+  // #bestBox{}
+  // #galleryBox{}
+  // #sponsorBox{}
+  // #footBox{}

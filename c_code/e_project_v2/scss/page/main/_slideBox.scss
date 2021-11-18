@@ -1,0 +1,16 @@
+//slideBox.scss
+
+#slideBox{
+  width: 100%; height:100vh; min-height:500px; 
+  background-color:#fff;
+
+  // @include mobile{}
+  // @include tablet{ height:$headH; }
+  // @include laptop{ height: #{$headH * 2}; }
+  // @include pc{ height: #{$headH * 2}; }
+
+  @include mobile{padding-top:$headH;} 
+  @include tablet{padding-top:$headH;}
+  @include laptop{ padding-top:$headH2; }
+  @include pc{ padding-top:$headH2; }
+}
