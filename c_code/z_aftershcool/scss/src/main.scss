@@ -1,0 +1,80 @@
+/* main.css */
+// main.scss
+
+@import "../common/reset","../common/mixin";
+
+
+// #{변수명/숫자} 인터폴레이션기법으로 내용을 담을 수 있게 처리하는 
+
+// for(변수명 in 배열){}
+// @for $i from 시작숫자 through 마지막숫자 {}
+
+// 숫자 1부터 5까지 5번 반복수행하면서 해당 숫자는 매개변수 $key에 임의 할당
+// .area_esspress{}  .area_latte{}  .area_choco{} ...의 형태로 .area_ 의 글자에
+// $coffee변수 내부에있는 이름을 각각 할당하기위해 보간법인 #{} 를 사용.
+// list형식을 사용하기 위해서는 nth(변수명, 순번)
+
+
+// .coffee_#{nth($coffee,1)} { width:100%; }
+// .coffee_#{2} {width: 100%;}    length($coffee)
+
+
+$coffee: ("espresso","latte","choco","vanila","other");
+$blue: (#00f, #0af, #0df, #7af, #adf);
+
+@for $key from 1 through 5{
+  .li_#{ nth($coffee, $key) } {
+    width:$key * 10%; height:100%;
+    background-color: nth($blue, $key);
+    margin:auto; padding:0; box-sizing:border-box;
+  }
+}
+
+// @for $key from 1 through 5{
+//   .li_#{ nth($coffee, $key) }{
+//     width: $key * 10%; height: 100%;
+//     background-color: nth($blue,$key);
+//     margin:auto; padding: 0; box-sizing: border-box;
+//   }
+// }
+
+
+
+// @for $key from 1 through length($coffee){
+//   .area_#{ nth($coffee, $key) } {
+//     width:$key * 10%; height:100%;
+//     background-color: nth($blue, $key);
+//     margin:auto; padding:0; box-sizing:border-box;
+//   }
+// }
+
+// <ul class="mixin_test">
+// <li><a href="#">안녕<span>뭐뭐뭐1</span></a></li>
+// <li><a href="#">잘가<span>뭐뭐뭐2</span></a></li>
+// <li><a href="#">안녕<span>뭐뭐뭐3</span></a></li>
+// </ul>
+
+// .nav_area {
+//   width: 960px; height:auto;
+//   li {
+//     float:left; width: auto; height:30px;
+//   }
+//   a { @include full; background-color: $yellow; }
+//   // span { @include blind(); }
+//   @include bar();
+// }// .nav_area
+
+$pink : #fad;
+
+.mixin_test{
+  @include clearfix();
+  & > li{
+    float: left;
+    width: 300px; height: 50px;
+    margin-bottom: 20px;
+    background-color: $pink;
+    @at-root .blind{
+      @include full();
+    }
+  }
+}
