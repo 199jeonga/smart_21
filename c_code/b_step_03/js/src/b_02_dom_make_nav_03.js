@@ -61,10 +61,38 @@ var displayStateFn = function(selector){
 };
 
 // 이벤트 ----------------------------------------------------
-dropBtn.addEventListener('click', function(event){
+// dropBtn.addEventListener('click', function(event){
+//   event.preventDefault();
+//   // (subMenuStyle.display === 'none') ? subMenu.style.display = 'block' :  subMenu.style.display = 'none';
+//   var state = displayStateFn(subMenu);
+//   console.log( state );
+//   (state === 'none') ? subMenu.style.display = 'block' :  subMenu.style.display = 'none';
+// });
+
+
+
+
+// 11.24 과제 ==============================================
+
+var btnWrap = document.querySelector('.drop_btn');
+var btn = btnWrap.querySelector('button');
+var subMenu = document.querySelector('.sub_menu');
+
+var originhieght = '40px';
+var maxheight = '132px';
+
+var eventFn = function(event){
   event.preventDefault();
-  // (subMenuStyle.display === 'none') ? subMenu.style.display = 'block' :  subMenu.style.display = 'none';
-  var state = displayStateFn(subMenu);
-  console.log( state );
-  (state === 'none') ? subMenu.style.display = 'block' :  subMenu.style.display = 'none';
-});
+  if(state === 'none'){
+      subMenu.style.display = 'block'
+    setTimeout(function(){
+    btnWrap.getComputedStyle(height) = maxheight;
+  },500);
+  }else{
+    btnWrap.getComputedStyle(height) = originhieght
+    setTimeout(function(){
+    subMenu.style.display = 'none'
+  },500);
+  }
+};
+btn.addEventListener('click', eventFn );

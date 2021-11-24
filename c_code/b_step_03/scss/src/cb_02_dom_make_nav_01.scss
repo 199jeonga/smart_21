@@ -91,6 +91,7 @@ h1 { width: 60px; height:40px; background-color: $color_primary_01;
       @at-root .sub_menu{
         display: none;
         position: static; 
+        transition: all 500ms linear;
       }// .sub_menu
       @at-root .sub_menu.on{
         display: block;
