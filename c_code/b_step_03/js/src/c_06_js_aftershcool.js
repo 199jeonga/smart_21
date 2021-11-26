@@ -36,9 +36,9 @@ console.log(sc[0]);
 */
 
 // 0.1초마다 1씩 줄어들어 500->250 만들기
-// 위를 버튼 클릭 시 행동하도록 수정 ->>>> 같이함!
-
+// 위를 버튼 클릭 시 행동하도록 수정 ->>>> 같이함!-> 문제 생김! 왜 ! undefined 나옴?
 /*
+
 var startN = 500;
 var endN = 250;
 var intervalFn;
@@ -69,9 +69,9 @@ btn.addEventListener('click',function(e){
   e.preventDefault();
   countFn(startN);
 })
+
+
 */
-
-
 
 //jQ 이용하여 slide 하기
 /*
@@ -113,12 +113,13 @@ var nowH = contentArea.style.height;
 
 // var nowH = 
 
-var setInFn = function(cssGetH){
+var setOutFn = function(cssGetH){
   var height = cssGetH
   setInterval(() => {
     height--;
     if(height >= 0){
       contentArea.style.height = height + 'px'; // 왜 이걸 변수로 적용하면 제대로 안 되는 거지?
+      // nowH = height + 'px';
     }else{
       clearInterval(setInFn);
       contentArea.style.display = 'none';
@@ -128,7 +129,7 @@ var setInFn = function(cssGetH){
 
 closeBtn.addEventListener('click', function(e){
   e.preventDefault();
-  setInFn(cssGetH);
+  setOutFn(cssGetH);
 })
 
 

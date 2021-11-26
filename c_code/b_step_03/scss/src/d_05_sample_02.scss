@@ -1,0 +1,19 @@
+/*d_05_sample_02*/
+//d_05_sample_02.scss
+#wrap{
+  width: 95%; height: auto; min-height: 500px;
+  margin: auto;
+}
+h1{width: 100px; margin-bottom: 1rem; border-bottom: 1px solid #777;}
+#viewBox{
+  width: 90%; height: auto; margin: auto; border: 1px solid #79f; padding: 1rem;
+  & .slide_area{
+    width: 100%; height: auto; background-color: #fff;
+    & > div{ height: 800px;
+    &:nth-child(1){ background-color:rgba(#31E21C,0.2); }
+    &:nth-child(2){ background-color:rgba(#216C1E,0.2); }
+    &:nth-child(3){ background-color:rgba(#0837B2,0.2); }
+    &:nth-child(4){ background-color:rgba(#7B387C,0.2); }
+    }
+  }
+}//viewBox
