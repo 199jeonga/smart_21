@@ -32,6 +32,3 @@ var permission = true;
 // conNone(conOResult);
 // })
 
-var conOpenFn = function(){
-  
-}
