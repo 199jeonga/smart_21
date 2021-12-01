@@ -21,23 +21,22 @@ var optionIndex = 0;
 var optionName = 'on';
 
 // 기능++++++++++++++++++++++
-// optionIndex 순번에 맞는 탭메뉴 구성
-// titleLiEl[optionIndex].classList.add('on');
-// contentYear[optionIndex].classList.add('on');
-
-
+// 함수 classSwitchFn(선택자); 기능으로 처음 요소에 'on' 첨부
 
 // 함수++++++++++++++++++++++
-
 var classSwitchFn = function(element){
-  element.forEach(function(data, idx){     
-    if(idx !== optionIndex){ data.classList.remove(optionName); 
-    }else{ data.classList.add(optionName); }
+  element.forEach(function(data, idx){ 
+    if(idx !== optionIndex){
+      data.classList.remove(optionName); 
+    }else{
+      data.classList.add(optionName); 
+    }
   });
 };
 
-// 함수 사전 수행
-
+// 함수 사전 수행 +++++++++++++
+classSwitchFn(titleLiEl);
+classSwitchFn(contentYear);
 
 // 이벤트++++++++++++++++++++++
   // li의 요소 각각을 클릭시 수행하는 기능
