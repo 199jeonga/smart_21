@@ -1,7 +1,7 @@
 // 2-1
 
 var innerCode = '\
-<button type="button" data-import data-id>\
+<a href="#" data-id>\
 <h4 class="event_title"></h4>\
 <p class="event_narration"></p>\
 <dl class="date">\
@@ -12,6 +12,6 @@ var innerCode = '\
   <dt></dt>\
   <dd></dd>\
 </dl>\
-</button>';
+</a>';
 
 

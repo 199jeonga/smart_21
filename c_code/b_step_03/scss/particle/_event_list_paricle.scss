@@ -1,9 +1,7 @@
 
-@at-root button{
-  position: relative;
-  display: flex; flex-direction: column; justify-content: flex-start;
+@at-root  a{
+  display: block;
   width: 100%; height: 100%; transition: all 300ms ease;
-  background-color: #ada;
   text-align: left;
   h4{
     width: 100%; height: auto;
@@ -16,11 +14,17 @@
     >dd{ font-size: map-get($font-size, content1); color:$color_white; }
   }
   .event_check{
+    $set_color:$color_white; // 변수로 지정!!
     position: absolute; top: 0; right: 0;
     display: flex; align-items: center;
-    &:hover{content: ""; display: block; width: 2rem; height: 2rem; background-color: $color_white; border-radius: 100%;}
+    &:hover{content: ""; display: block; width: 2rem; height: 2rem; background-color: $set_color; border-radius: 100%;}
     >dt{@include full}
-    >dd{margin-left: 0.5rem; font-size: map-get($font-size, content1);}
+    >dd{margin-left: 0.5rem; font-size: map-get($font-size, content1); font-weight: 700; color: $set_color;}
   }
 }
-button:hover{transform: scale(1.05);}
+// a:hover{transform: scale(1.05);}
+
+.end .event_check{ $set_color : $color_light_gray_02;
+&:before{background-color: $set_color;}
+>dd{color:set_color;}
+}
