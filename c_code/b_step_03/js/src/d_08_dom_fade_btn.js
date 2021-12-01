@@ -75,10 +75,10 @@ var cssTransitionFn = function(){
   // modal.style.transitionProperty = 'opacity';
   // modal.style.transitionDuration = '500ms';
   // modal.style.trnasitionTimingFunction = 'linear';
-  modal.style.transition = 'opacity 300ms linear';
+  modal.style.transition = 'opacity 3000ms linear';
   setTimeout(function(){
     modal.style.opacity = 1;
-  },1)
+  },1000)
 }
 
 cssBtn.addEventListener('click', function(e){

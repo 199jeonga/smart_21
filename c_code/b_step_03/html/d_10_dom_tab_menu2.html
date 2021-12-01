@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/src/d_10_dom_tab_menu2.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <title>탭메뉴 및 모달 윈도우 만들기</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1><a href="./a_content.html">웹</a></h1>
+    </header>
+    <!-- ================================ -->
+    <article id="eventBox">
+      <div class="width_full">
+        <div class="title_area">
+          <h2>event</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />
+            Aenean integer sed amet, turpis consectetur cursus leo. Fringilla mas.</p>
+        </div>
+      </div><!-- .width_full -->
+
+      <div class="event_area">
+        <div class="title_inner">
+          <ul>
+            <li><button type="button">2021년</button></li>
+            <li><button type="button">2020년</button></li>
+            <li><button type="button">2019년</button></li>
+            <li><button type="button">2018년</button></li>
+          </ul>
+        </div>
+
+        <div class="content_inner">
+          <div class="year_part">
+            <h3>2021년도 이벤트</h3>
+            <ul class="event_particle">
+              <li>문구들~
+              </li>
+              <li>
+                <button type="button" data-import="../event/y21042_data.json" id="event_21042">
+                  <h4 class="event_title">summer flaver</h4>
+                  <p class="event_narration">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati mollitia ipsum reprehenderit quo itaque repudiandae sint consectetur corrupti sit atque.</p>
+                  <dl class="date">
+                    <dt class="blind">기간</dt>
+                    <dd>2022.01.05 - 2022.05.15</dd>
+                  </dl>
+                  <dl class="event_check success">
+                    <dt>이벤트 진행 상태</dt>
+                    <dd>이벤트 진행 종료</dd>
+                  </dl>
+                </button>
+              </li>
+              <li>event_03</li>
+              <li>event_04</li>
+              <li>event_05</li>
+            </ul>
+          </div>
+          <div class="year_part">
+            <h3>2020년도 이벤트</h3>
+            <ul class="event_particle">
+              <li>event_01</li>
+              <li>event_02</li>
+              <li>event_03</li>
+              <li>event_04</li>
+              <li>event_05</li>
+            </ul>
+          </div>
+          <div class="year_part">
+            <h3>2019년도 이벤트</h3>
+            <ul class="event_particle">
+              <li>event_01</li>
+              <li>event_02</li>
+              <li>event_03</li>
+              <li>event_04</li>
+              <li>event_05</li>
+            </ul>
+          </div>
+          <div class="year_part">
+            <h3>2018년도 이벤트</h3>
+            <ul class="event_particle">
+              <li>event_01</li>
+              <li>event_02</li>
+              <li>event_03</li>
+              <li>event_04</li>
+              <li>event_05</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </article>
+    <!-- ================================ -->
+    <footer id="footBox">
+      <h2>site information</h2>
+    </footer>
+  </div>
+
+
+  <script src="../js/d_10_dom_tab_menu2.js"></script>
+  <script src="../js/d_10_dom_tab_menu2-1.js"></script>
+</body>
+</html>

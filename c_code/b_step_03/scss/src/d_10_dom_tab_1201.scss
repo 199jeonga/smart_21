@@ -1,0 +1,66 @@
+
+@import "../common/mixin", "../common/variable";
+
+
+#wrap{
+  width: 800px; height: auto; min-height: 500px;
+  border: 1px solid $color_light_gray_02;
+  @at-root .year_part{
+    display: flex; justify-content: left;
+    .yeartab_btn{
+      width: 80px; height: 40px;
+      color:$color_primary_01; font-weight: 500;
+      padding: 4px;
+      &.on{
+        font-weight: 900;
+        background-color: $color_primary_01; color:#fff;
+        text-decoration:underline;
+      }
+      button{
+        @include full;
+        cursor: pointer; color: inherit;
+      }
+    } //yeartab_btn
+  }//.year_part
+  @at-root .content_part{
+    width: 100%; height: auto;
+    background-color: #eee;
+    .content_area{
+      display: none;
+      width: 100%; height: auto;
+      &.on{
+        display: block;
+      }
+    }
+    .content_list{
+      // display: none;
+      width: 100%; height: auto;
+      padding: 10%;
+      li{
+        width: 100%; height: 100px;
+        background-color: #aaa;
+        border:1px solid $color_light_gray_03; border-radius: 0.25rem;
+        margin-bottom: 20px;
+      }
+    }//content_list
+    .content_modal{
+      // background-color: rgba(0,0,0,0.3);
+      width: 100%; height: 100%; 
+      &::before{ width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);}
+      & > div{display: none;}
+      & > div.on{
+        display: block;
+        position: absolute; top: 0; left: 0; bottom: 0; right: 0; margin: auto;
+        width: 400px; height: 300px;
+        background-color: #fff;
+        border:1px solid #333;  
+        button{
+          display: block;
+          width: 50px; height: 30px;
+          background-color: #aad;
+          cursor: pointer;
+        }
+      }
+    }//content_modal
+  }//content_part
+}//wrap
