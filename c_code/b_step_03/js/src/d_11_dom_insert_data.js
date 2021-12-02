@@ -102,38 +102,37 @@ for(; i < len; i += 1){
 // 1. li요소 첫번째 선택
 // 2. 공통 n번째를 가르키는 변수를 생성
 // ======================================================
-var li = cardUl.querySelectorAll('li'); // 안에 있을 필요가 없어서 나왔다.
-// 프로퍼티가 없는 것이 있어 오류가 나고 있다. 그래서 추가 식을 작성해야 함.
-var setCardFn(n){
-  var idx = n;
-  var dt = li[idx].querySelector('dt');
-  var narr = li[idx].querySelector('dd>span');
-  var link = li[idx].querySelector('dd>a');
-  var bgImg = li[idx].querySelector('.bg_img');
-  var bgNarr =bgImg.querySelector('span');
+
+var li         = cardUl.querySelectorAll('li');
+var setCardFn = function(n){
+  var idx        = n;
+  var dt         = li[idx].querySelector('dt');
+  var narr       = li[idx].querySelector('dd span');
+  var link       = li[idx].querySelector('dd a');
+  var bgImg      = li[idx].querySelector('.bg_img');
+  var bgNarr     = bgImg.querySelector('span');
   
-  dt.innerText = data[idx].title;
+  // 사용이미지없거나, 링크 주소가 없거나(!!undefined) 한다면 해당 요소는 삭제
+  dt.innerText   = data[idx].title;
   narr.innerText = data[idx].contents;
-  link.innerText  = data[idx].link;
-  link.setAttribute('href', data[idx].link);
-  bgImg.style.backgroundImage = 'url(' + data[idx].bgImg + ')';
-  // var testColor = getComputedStyle(bgImg).backgroundColor;
-  
-  bgNarr.innerText = data[idx].bgNarr;
-};
+  //link.href      = data[idx].link;
+  ( !!data[idx].link ) ? link.href = data[idx].link : link.remove();
 
+  if(data[idx].bgImg !== undefined){
+    bgImg.style.backgroundImage = 'url(' + data[idx].bgImg + ')';
+    bgNarr.innerText = data[idx].bgNarr;
+  }else{
+    bgImg.remove();    
+  }
 
-setCardFn(0);
-setCardFn(1);
-setCardFn(2);
-setCardFn(3);
-setCardFn(4);
-setCardFn(5);
-setCardFn(6);
-setCardFn(7);
+}; // setCardFn(n)
 
-
+// li 내용 처리
+for(i = 0 ; i < len; i += 1){
+  setCardFn(i);
+}
 
 // ---------------------------------------
 // cardUl.appendChild(makeLi); 여기서 innerHTML :(중복을 허용하지 않고 내부자료를 삭제 후 덮어 씌우기) 대신 append : 기존 자료에 추가 
 // escape 문자 : 해당하는 글자가 어떠한 기능을 처리하게 만드는 것을 \' \' \& \| \! , \n \t
+//link.setAttribute('href', data[idx].link); // 어떠한 속성도 처리 가능 data-속성
