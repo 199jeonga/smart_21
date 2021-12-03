@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../css/src/d_10_dom_tab_menu2.css">
   <link rel="stylesheet" href="../css/common/common.css">
   <link rel="stylesheet" href="../css/common/reset.css">
+  <!-- <link rel="stylesheet" href="../css/common/reset.css"> -->
   <title>탭메뉴 및 모달 윈도우 만들기</title>
 </head>
 <body>
@@ -35,9 +36,9 @@
         </div>
 
         <div class="content_inner">
-          <div class="year_part">
+          <!-- <div class="year_part">
             <h3>2021년도 이벤트</h3>
-            <!-- <ul class="event_particle">
+            <ul class="event_particle">
               <li>event_01(제목, 내용, 기간, 진행여부, 배경이미지, 불러올 링크 data)</li>
               <li class="end">
                 <a href="../event/y21042_data.json" data-id="event_21042">
@@ -56,8 +57,8 @@
               <li>event_03</li>
               <li>event_04</li>
               <li>event_05</li>
-            </ul> -->
-          </div>
+            </ul> 
+          </div>-->
           <div class="year_part">
             <h3>2020년도 이벤트</h3>
             <ul class="event_particle">
@@ -88,7 +89,20 @@
               <li>event_05</li>
             </ul>
           </div>
+        </div><!--content_inner-->
+
+        <!-- modal -->
+        <div class="event_modal">
+          <div class="modal_part">
+            <h4>modal title</h4>
+            <div class="modal_particle">
+              <div class="inner_sample">sample</div>
+            </div>
+            <div class="modal_close"><button type="button">닫기</button></div>
+          </div>
+          <div class="modal_bg"></div>
         </div>
+
       </div>
 
     </article>
@@ -99,7 +113,9 @@
   </div>
 
 
-  <script src="../js/d_10_dom_tab_menu2.js"></script>
-  <script src="../js/d_10_dom_tab_menu2-1.js"></script>
+  <!-- <script src="../js/d_10_dom_tab_menu2-1.js"></script> -->
+  <script src="../js/d_10_dom_tab_menu2-2.js"></script> <!--객체생성 : json을 이용한 data 처리-->
+  <script src="../js/d_10_dom_tab_menu2.js"></script> <!--동작 : tab menu 처리-->
+  <script src="../js/src/d_10_dom_modal.js"></script> <!--동작 : modal window-->
 </body>
 </html>
