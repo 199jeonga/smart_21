@@ -97,6 +97,8 @@ var elParent = parentElement;
   elDate.innerText = data.date;
 
 
+
+  
   switch(data.status){
     case 'plan':
       elEventCh.classList.add('plan');
@@ -115,6 +117,56 @@ var elParent = parentElement;
       elEventCh.classList.add('stop');
       elEventDd.innerText = '진행중지';
   } //배열처리 해서 순환 시키면 된다고 함
+
+
+
+
+
+
+  // var switchCaseFn = function(caseName, text){
+  //   elEventCh.classList.add(caseName);
+  //   elEventDd.innerText = text;
+  // };
+
+  // var switchFn = function(data){
+  //   switch(data){
+  //       case 'plan':
+  //         switchCaseFn('plan', '준비중');
+  //         break;
+  //       case 'play':
+  //         switchCaseFn('play', '진행');
+  //         break;
+  //       case 'end': 
+  //         switchCaseFn('end', '종료');
+  //         break;
+  //       case 'stop':
+  //       default:
+  //         switchCaseFn('stop', '진행중지');
+  //     } //배열처리 해서 순환 시키면 된다고 함
+  // };
+  // switchFn(data.status);
+
+
+
+
+  // switch(data.status){
+  //   case 'plan':
+  //     elEventCh.classList.add('plan');
+  //     elEventDd.innerText = '준비중';
+  //     break;
+  //   case 'play':
+  //     elEventCh.classList.add('play');
+  //     elEventDd.innerText = '진행';
+  //     break;
+  //   case 'end': 
+  //     elEventCh.classList.add('end');
+  //     elEventDd.innerText = '종료';
+  //     break;
+  //   case 'stop':
+  //   default:
+  //     elEventCh.classList.add('stop');
+  //     elEventDd.innerText = '진행중지';
+  // } //배열처리 해서 순환 시키면 된다고 함
 
   // morePath
   elLink.setAttribute('data-href', data.morePath);
