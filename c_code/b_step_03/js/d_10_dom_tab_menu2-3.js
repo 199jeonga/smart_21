@@ -17,8 +17,14 @@ var elContentInner = elEventArea.querySelector('.content_inner');
 var elYearPart = elContentInner.querySelector('.year_part.on');
 var elEventParticle = elYearPart.querySelector('.event_particle');
 // var elEventLi = elEventParticle.querySelectorAll('li');
-// var elEventLi = elEventParticle.children;
-// var elEventLiArr = Array.prototype.slice.call(elEventLi);
+var elEventLi = elEventParticle.children;
+var elEventLiArr = Array.prototype.slice.call(elEventLi);
+
+//event Modal
+var elEventModal = elEventBox.querySelector('.event.modal');
+
+//추가 적용할 변수
+var OPTION_TEXT = 'on';
 
 
 
@@ -52,7 +58,11 @@ console.log( footInnerLi );
 // });
 // console.log( footTypeCheck );
 
+elEventArr.forEach(function(){
+  
+});
 
 
 
 // ++++++++++++++++++++++++++++++++++++++++++++++
+
