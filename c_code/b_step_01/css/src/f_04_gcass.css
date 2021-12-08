@@ -61,7 +61,42 @@ h1 a{
   display: block;
   width: 100%; height: 100%;
   padding: 0.1875rem 0.5rem; padding-right: 0.25rem; box-sizing: border-box;
+  background-image: url("../../img/gcass/nav.png");
+  background-repeat: no-repeat;
+  background-position-x: 0;
 }
+
+
+/* .about{background-position: 0 0;}
+.study{background-position: 0 -60px;}
+.photo{background-position: 0 -120px;}
+.blog{background-position: 0 -180px;}
+.press{background-position: 0 -240px;} */
+
+
+/* .about:hover{background-position-x: -138px;}
+.study:hover{background-position-x: -138px;}
+.photo:hover{background-position-x: -138px;}
+.blog:hover{background-position-x: -138px;}
+.press:hover{background-position-x: -138px;} */
+
+.about{background-position-y:clac(60px * -0);}
+.study{background-position-y:clac(60px * -1);}
+.photo{background-position-y:clac(60px * -2);}
+.blog{background-position-y:clac(60px * -3);}
+.press{background-position-y:clac(60px * -4);}
+.gnb .qna{
+  width: 115px; height: 111px;
+  background-position: -20px -294px;
+}
+
+.gnb a:hover{background-position-x: 100%;}
+.gnb .qna:hover{background-position-x: calc();}
+
+
+
+
+
 .gnb a:hover{text-decoration: none;}
 .gnb i{
   float: right; font-size: var(--font-nomal);
@@ -76,7 +111,6 @@ h1 a{
 .gnb li:last-child a{
   border-radius: 100%;
   padding: 0.1875rem; margin-bottom: 0;
-  background-color: var(--color-white);
   color:var(--color-gray4);
   font-size: var(--font-point);
   line-height: 6.875rem;
@@ -101,12 +135,20 @@ h1 a{
 .view_img{
   position:absolute; right: 18.5625rem; bottom: 4rem; z-index: 10;
   width: 20.5rem; height: 32.5rem;
-  background-color: #aa2;
+  background-image: url("../../img/gcass/viewBox_img.png");
+  background-repeat: no-repeat;
+  background-position: -10px -5px;
+  background-size: initial;
+  filter: drop-shadow(5px 5px 5px #333);
 }
 .view_content{
   position:absolute; right: 3rem; bottom: 7.5rem; 
-  width: 18.375rem; height: 20.8125rem;
-  background-color: #fda;
+  width: 294px; height: 443px;
+  background-image: url("../../img/gcass/section-text-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: initial;
+  filter:drop-shadow(5px 5px 5px #333);
 }
 
 

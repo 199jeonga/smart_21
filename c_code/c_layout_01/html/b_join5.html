@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- b_join5.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_join5.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">쿠팡</a></h1>
+    <form action="#" method="POST">
+      <fieldset class="idPwBox">
+        <legend class="blind">아이디 및 비밀번호 입력</legend>
+        <ul>
+          <li class="error">
+            <div class="action clearfix">
+              <label for="idCon"><i class="far fa-envelope"></i><span class="blind">아이디를 입력하세요.</span></label>
+              <input type="email" id="idCon" name="id__Con" value="" placeholder="아이디(이메일)" required />
+            </div>
+            <span class="message">아이디(이메일)를 입력해주세요.</span>
+          </li>
+          <li>
+            <label for="pwCon"><i class="fas fa-lock"></i><span class="blind">비밀번호를 입력하세요.</span></label>
+            <input type="password" id="pwCon" name="pw__Con" value="" placeholder="비밀번호" required />
+            <!-- <span class="message">비밀번호를 입력해주세요.</span> -->
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset>
+        <legend class="blind">자동로그인 선택 및 아이디와 비밀번호 찾기 이동</legend>
+        <div class="autologin_area">
+          <input type="checkbox" id="automaticLogin" name="automatic__Login" value="check" />
+          <label for="automaticLogin">자동 로그인<span class="blind">체크하기</span></label>
+        </div>
+        <div class="idsearch_area">
+          <a href="#">아이디(이메일)&#47;비밀번호 찾기 <i class="fas fa-chevron-right"></i></a>
+        </div>
+        <p class="action" hidden>개인 정보 보호를 위해 본인 기기에서만 이용해 주세요.</p>
+      </fieldset>
+
+      <fieldset>
+        <legend class="blind">로그인하기</legend>
+        <button type="submit">로그인</button>
+      </fieldset>
+    </form>
+    <div class="line"></div>
+    <button type="submit" value="" class="join">회원가입</button>
+    <p>©Coupang Corp. All rights reserved.</p>
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>

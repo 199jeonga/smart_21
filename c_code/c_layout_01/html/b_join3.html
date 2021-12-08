@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- b_join3.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_join3.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">웹</a></h1>
+    <div id="join">
+      <h2><span class="blind">네이버</span></h2>
+      <div id="joinBox">
+        <form action="#" method="POST">
+          <fieldset>
+            <legend class="blind">회원가입하기</legend>
+            <ul class="customerInfo">
+              <li>
+                <h3>아이디</h3>
+                <div class="con_area">
+                  <input type="text" id="userId" value="" name="user__id">
+                  <label for="userId" method="POST">@naver.com</label>
+                </div>
+              </li>
+
+              <li>
+                <h3>비밀번호</h3>
+                <div class="con_area">
+                  <input type="password" id="userPw" value="" name="user__pw">
+                  <label for="userPw" method="POST"><span class="blind">비밀번호</span><i class="fas fa-lock"></i></label>
+                </div>
+              </li>
+
+              <li>
+                <h3>비밀번호 재확인</h3>
+                <div class="con_area">
+                  <input type="password" id="userPwRe" value="" name="user__pw__re">
+                  <label for="userPwRe" method="POST"><span class="blind">비밀번호재확인</span><i class="fas fa-lock"></i></label>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="userInfo">
+              <li>
+                <h3>이름</h3>
+                <div class="con_area">
+                  <label for="userName" method="POST" class="blind">이름</label>
+                  <input type="text" id="userName" value="" name="user__name">
+                </div>
+              </li>
+              <li>
+                <h3>생년월일</h3>
+                <div class="birthday_area clearfix">
+                    <label for="birthdayYy" method="POST" class="blind">생년월일</label>
+                    <input type="text" id="birthdayYy" class="con_area" value="" name="birthdat__yy" placeholder="년(4자)">
+                    <div id="birthdayMm"class="con_area">
+                      <dl>
+                        <dt><a href="#">월</a></dt>
+                        <dd>
+                          <a href="#">1월</a>
+                          <a href="#">2월</a>
+                          <a href="#">3월</a>
+                          <a href="#">4월</a>
+                          <a href="#">5월</a>
+                          <a href="#">6월</a>
+                          <a href="#">7월</a>
+                          <a href="#">8월</a>
+                          <a href="#">9월</a>
+                          <a href="#">10월</a>
+                          <a href="#">11월</a>
+                          <a href="#">12월</a>
+                        </dd>
+                      </dl>
+                    </div>
+                    <input type="text" id="birthdayDd" class="con_area" value="" name="birthday__dd" placeholder="일">
+                </div>
+              </li>
+              <li>
+                <h3>성별</h3>
+                <div class="con_area">
+                  <select id="gender" value="" name="gender">
+                    <option value selected>성별</option>
+                    <option value="M">남자</option>
+                    <option value="F">여자</option>
+                    <option value="U">선택안함</option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <h3>본인확인 이메일<span class="font_small">(선택)</span></h3>
+                <div class="con_area">
+                  <label for="checkEmail" method="POST" class="blind">본인확인 이메일</label>
+                  <input type="text" id="checkEmail" value="" name="check__email" placeholder="선택입력">
+                </div>
+              </li>
+            </ul>
+
+            <ul class="phoneNumberBox">
+              <li>
+                <h3>휴대전화</h3>
+                <div class="con_area">
+                  <select id="country" value="" name="contry">
+                    <option value selected>대한민국 +82</option>
+                    <option value="A">몰라</option>
+                    <option value="B">몰라2</option>
+                  </select>
+                </div>
+                <div  class="phonecheck">
+                  <label for="#" method="POST" class="blind">인증번호 보내기</label>
+                  <input type="text" id="phoneNumner" value="" name="phone__number" placeholder="전화번호 입력">
+                </div>
+                <button type="button" class="check_btn">인증번호 받기</button>
+
+                <div  class="con_area clearboth">
+                  <label for="checkNumer" method="POST" class="blind">인증번호 확인</label>
+                  <input type="text" id="checkNumer" value="" name="check__number" placeholder="인증번호 입력하세요.">
+                </div>
+              </li>
+            </ul>
+
+            <input type="submit" value="가입하기">
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>

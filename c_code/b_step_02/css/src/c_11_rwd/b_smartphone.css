@@ -1,0 +1,22 @@
+/* max-width:480px */
+@media all and (max-width:480px) {
+  #wrap{min-width: 320px;}
+  #headBox{ position: relative; height: 100px;}
+  h1{width: 100%; height: 100%; padding: 5px 100px; background-color: #aca;}
+  #gnbBox{
+    position: absolute; right: 10px; top: 30px;
+    width: 45px; height: 45px; background-color: #fff;}
+    .nav_btn{width: 100%; height: 100%;}
+    .nav_btn>button{width: 100%; height: 100%;}
+    .global_nav{display: none;}
+  #viewBox{height: 400px;}
+  /* #conBox{} */
+  #conBox ul{width: 100%; height: 100%;}
+  #conBox li{float: left; width: 50%; height: 50%; background-color: #7af;}
+  #conBox li:nth-child(2n+1){background-color: #afa;}
+  #otherBox{height: 300px;}
+    .info_area{width: 100%; height: 100px; background-color: #fc0;}
+    .notice_area{width: 100%; height: 200px; background-color: #afa;}
+  #footBox{background-color: #a70;}
+  #footBox h2{width: 50%; margin: auto;}
+}/* max-width:480px */

@@ -1,0 +1,19 @@
+/* c_11_smartphone.css */
+
+@media all and (max-width:480px) {
+
+#wrap{width: 100%; min-width: 320px;}
+#headBox{height: 100px; background-color: #ddd;}
+h1{display: none;}
+.menu{float: right; margin-right: 10px; margin-top: 20px; width: 45px; height: 45px; background-color: #ada;}
+#viewBox{height: 400px;}
+#conBox{height: 400px;}
+.con_content{
+  width: 50%; height: 50%;
+}
+/* #con2Box{} */
+/* #infoBox{} */
+/* #footBox{} */
+h2{width: 50%;}
+
+} /* max-width:480px */

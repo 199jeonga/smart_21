@@ -1,0 +1,16 @@
+/* c_11_tablet.css */
+
+@media all and (min-width:481px) and (max-width:759px) {
+  
+#wrap{width: 100%;}
+/* #headBox{} */
+/* h1{} */
+.menu{display: none;}
+#viewBox{height: 300px;}
+#conBox{height: 400px;}
+.con_content{width: 25%; height: 100%;}
+/* #con2Box{} */
+/* #infoBox{} */
+/* #footBox{} */
+
+} /*  (min-width:481px) and (max-width:767px) */

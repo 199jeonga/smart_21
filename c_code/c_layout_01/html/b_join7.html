@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- b_join7.html -->
+<html lang="ko-KR" class="no-js">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../fonts/fontAwesome/css/all.min.css">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/common.css">
+  <link rel="stylesheet" href="../css/src/b_join7.css">
+
+  <script src="../js/common/modernizr-custom.js"></script>
+
+  <title></title>
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <h1><a href="./a_00_content.html">웹</a></h1>
+    <div id="joinBox">
+      <form action="#" method="POST">
+        <!--  회원정보 기입 -->
+        <fieldset class="customer_info">
+          <legend class="blind">계정정보 및 개인정보 입력란</legend>
+          <p>회원정보를 입력해주세요.</p>
+          <ul>
+            <li class="action">
+              <label for="customerId">
+                <i class="fas fa-envelope"></i>
+                <span class="blind">사용자 이메일 작성</span>
+              </label>
+              <input type="text" id="customerId" name="customer__Id" value="" placeholder="아이디(이메일)" />
+            </li>
+            <p>이메일을 입력하세요.</p>
+            <li class="action">
+              <label for="customerPw">
+                <i class="fas fa-lock"></i>
+                <span class="blind">사용자 비밀번호 작성</span>
+              </label>
+              <input type="password" id="customerPw" name="customer__Pw" value="" placeholder="비밀번호" />
+            </li>
+            <p>	영문/숫자/특수문자 2가지 이상 조합 (8~20자) <br />
+                3개 이상 연속되거나 동일한 문자/숫자 제외<br />
+                아이디(이메일) 제외
+            </p>
+            <li>
+              <label for="customerPw2">
+                <i class="fas fa-user-check"></i>
+                <span class="blind">사용자 비밀번호 확인</span>
+              </label>
+              <input type="password" id="customerPw2" name="customer__Pw2" value="" placeholder="비밀번호 확인" />
+            </li>
+            <li>
+              <label for="customerName">
+                <i class="fas fa-user"></i>
+                <span class="blind">사용자 이름 작성</span>
+              </label>
+              <input type="text" id="customerName" name="customer__Name" value="" placeholder="이름" />
+            </li>
+            <li>
+              <label for="customerTel">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="blind">휴대폰 번호 작성</span>
+              </label>
+              <input type="tel" id="customerTel" name="customer__Tel" value="" placeholder="휴대폰 번호" />
+            </li>
+          </ul>
+        </fieldset>
+        
+        
+        <!-- 체크박스 -->
+        <fieldset class="agree_box">
+          <legend class="blind">쿠팡 서비스 약관을 읽고 동의하시면 가입을 진행해 주세요.</legend>
+          <p>쿠팡 서비스약관에 동의해주세요</p>
+          <div class="clearfix">
+            <input type="checkbox" class="blind" id="allAgree" name="all__Agree" value="all_agree" />
+            <label for="allAgree">
+              <i></i>
+              <span>모두 동의합니다.</span>
+            </label>
+          </div>
+          <ul class="agree_area">
+            <li class="clearfix">
+              <input type="checkbox" class="blind" id="notChlid" name="not__Chlid" value="not_chlid" />
+              <label for="notChlid">
+                <i></i>
+                <span>
+                  [필수] 만 14세 이상입니다</span>
+              </label>
+            </li>
+            <li class="clearfix">
+              <input type="checkbox" class="blind" id="coupangUse" name="coupang__Use" value="coupang_use" />
+              <label for="coupangUse">
+                <i></i>
+                <span>
+                  [필수] 쿠팡 이용약관 동의
+                </span>
+                  <i class="fas fa-arrow-right modal_action"></i>
+                  <div class="modal_area">
+                    <div class="modal_part">
+                    </div>
+                  </div>
+              </label>
+            </li>
+            <li class="clearfix">
+              <input type="checkbox" class="blind" id="financialTrans" name="financial__Trans" value="financial_trans" />
+              <label for="financialTrans">
+                <i></i>
+                <span>[필수] 전자금융거래 이용약관 동의</span>
+                <i class="fas fa-arrow-right modal_action"></i>
+                <div class="modal_area">
+                  <div class="modal_part">
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="clearfix">
+              <input type="checkbox" class="blind" id="personalInfo" name="personal__Info" value="personal_info" />
+              <label for="personalInfo">
+                <i></i>
+                <span>[필수] 개인정보 수집 및 이용 동의</span>
+                <i class="fas fa-arrow-right modal_action"></i>
+                <div class="modal_area">
+                  <div class="modal_part">
+                  </div>
+                </div>
+              </label>
+            </li>
+            <li class="clearfix">
+              <input type="checkbox" class="blind" id="personalInfoGive" name="persona__lInfoGive" value="personal_InfoGive" />
+              <label for="personalInfoGive">
+                <i></i>
+                <span>[필수] 개인정보 제공 동의</span>
+                <i class="fas fa-arrow-right modal_action"></i>
+                <div class="modal_area">
+                  <div class="modal_part">
+                  </div>
+                </div>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend class="blind">회원가입 완료</legend>
+          <button type="submit"><span class="blind">쿠팡 서비스 약관에</span>동의하고 가입하기</button>
+        </fieldset>
+      </form>
+    </div><!-- joinBox -->
+    <div id="footBox">
+      <p>©Coupang Corp. All rights reserved.</p>
+    </div>
+  </div><!--#wrap-->
+
+  <!-- script -->
+  <script>
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+@media all and (min-width:768px) and (max-width:959px) {
+
+  #headBox{ height:60px;  }
+  #viewBox{height: 450px; padding-top: 60px; }
+  #contnetBox{height: 210px;}
+  #infoBox{height: 540px;}
+  #footBox{height: 120px;}
+
+} /* (min-width:768px) and (max-width:959px), design:768px*/

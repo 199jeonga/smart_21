@@ -1,0 +1,72 @@
+#wrap{
+  width: 100%; height: auto;
+}
+.text{
+  width: 100%; height: auto;
+  margin-bottom: 100px;
+  background-color: #ee2;
+}
+
+.conten_login_area{
+  width: 500px; height: 400px;
+  padding: 20px; box-sizing: border-box;
+  border:1px solid #333;
+}
+form{
+  width: 100%; height: 320px;
+  box-sizing: border-box; padding: 20px; padding-top: 0;
+  margin: 0; margin-bottom: 15px;
+  border: 1px solid #aaa; border-top: 0;
+}
+fieldset{
+  width: 100%; height: 100%;
+  padding: 0; margin: 0; border: 0;
+}
+legend{
+  width: 150px; height: 40px;
+  font-size: 1.1rem; line-height: 40px; text-indent: 10px; font-weight: 400;
+  padding: 0; margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-left: 0; border-bottom: 0;
+}
+/* label{
+  display:none;
+} */
+#userId, #userPw{
+  width:100%; height: 40px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border:1px solid #aaa; border-radius: 8px;
+}
+.login_radio{
+  width: 130px; height: 30px;
+}
+.login_radio label{
+  float: right;
+  width: auto; height: auto;
+}
+#loginIng{
+  float: left;
+  width: auto; height: auto;
+}
+
+#loginBtn{
+  width: 100%; height: 40px;
+  border:0; border-radius: 8px;
+  background-color: #06C55D; color:#fff;
+}
+
+#userInfo{
+  width: 450px; height: 40px;
+  margin: 0 auto;
+}
+#userInfo div{
+  float: left;
+  width: calc(100% / 3); height: auto;
+}
+#userInfo a{
+  display: block;
+  width: 100%; height: 100%;
+  text-align: center; font-size: 14px;
+  padding: 0 20px; box-sizing: border-box;
+}

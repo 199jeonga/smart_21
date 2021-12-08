@@ -1,0 +1,5 @@
+/* base css */
+@import url("../src/c_10_rwd_01/c_10_base.css");
+@import url("../src/c_10_rwd_01/c_10_smartphome.css");
+@import url("../src/c_10_rwd_01/c_10_tablet.css");
+@import url("../src/c_10_rwd_01/c_10_pc.css")
