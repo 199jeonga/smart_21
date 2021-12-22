@@ -158,7 +158,7 @@
   // 이전버튼 클릭시 수행하는 함수
   const aniPrevSlide = async () => {
     ulStyle.left = ( -100 * SLIDE_COUNT ) + '%'; 
-    await fnDelay(TIME_OPTION);
+    await fnDelay(TIME_OPTION+);
     if(SLIDE_COUNT <= -1){
       SLIDE_COUNT = slideLen - 1;
       ulStyle.transition = null;
