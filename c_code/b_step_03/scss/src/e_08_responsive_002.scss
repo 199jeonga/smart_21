@@ -1,0 +1,12 @@
+
+#root{
+  width: 100%; height: auto; min-height: 500px;
+  background-color: #eef;
+}
+
+#headBox{
+  position: fixed; top: 0; left: 0; right: 0; margin: auto;
+  width: 100%; min-width: 1440px; height: 80px; background-color: #fff;
+}
+#mainBox{width: 100%; height: auto; background-color: #fff;}
+#footBox{width: 100%; height: auto; background-color: #fff;}
