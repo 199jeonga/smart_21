@@ -1,0 +1,31 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 21 | / @include desk{
+ * 22 | |   #navBox {
+ * 23 | |     width:80%; height:50px;
+ * 24 | |     background-color: #dff;
+ * 25 | |     .unb, .search{ display: none;}
+ * 26 | |     .gnb {
+ * 27 | |       >ul{ display: flex; justify-content: flex-end; 
+ * 28 | |             width:auto; height:50px; background-color: #faa;}
+ * 29 | |       li {width:150px; height:auto; margin-right:  2rem; background-color: #dff;
+ * 30 | |         &:last-child {margin-right: 0;}
+ * 31 | |       }
+ * 32 | |       .nav_sub  {display: none;}
+ * 33 | |       &:hover .nav_sub{display: block;}    
+ * 34 | |     }
+ * 35 | |   }
+ * 36 | \ }
+ *    '
+ *   scss\src\e_06_responsive.scss 21:1  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 21 \2502  \250c  @include desk{\a 22 \2502  \2502    #navBox {\a 23 \2502  \2502      width:80%; height:50px;\a 24 \2502  \2502      background-color: #dff;\a 25 \2502  \2502      .unb, .search{ display: none;}\a 26 \2502  \2502      .gnb {\a 27 \2502  \2502        >ul{ display: flex; justify-content: flex-end; \a 28 \2502  \2502              width:auto; height:50px; background-color: #faa;}\a 29 \2502  \2502        li {width:150px; height:auto; margin-right:  2rem; background-color: #dff;\a 30 \2502  \2502          &:last-child {margin-right: 0;}\a 31 \2502  \2502        }\a 32 \2502  \2502        .nav_sub  {display: none;}\a 33 \2502  \2502        &:hover .nav_sub{display: block;}    \a 34 \2502  \2502      }\a 35 \2502  \2502    }\a 36 \2502  \2514  }\a    \2575 \a   scss\\src\\e_06_responsive.scss 21:1  root stylesheet";
+}
