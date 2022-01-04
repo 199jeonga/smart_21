@@ -1,25 +1,12 @@
-// Header.js
+import Navigation from './Navigation';
+import '../style/Header.scss'
 
-export default function Header(){
-  const myName = 'xido-school';
-  const h1Style = { 
-    color:'#05f', 
-    textTransform: 'uppercase'
-  };
-
+export default function Header(props){
+  
   return (
-      <header id="headBox">
-        <h1 style={h1Style}>{myName}</h1>
-      </header>
-  )
+    <header id="headBox">
+      <h1>{props.heading}</h1>
+      <Navigation />      
+    </header>
+    )
 }
-
-
-// -------------------------------------
-// function Header() {}
-// export default Header;
-
-// export default function Header(){}
-
-// const Header = function(){}
-// export default Header;
