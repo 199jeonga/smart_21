@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 import '../style/Review.scss';
 
 
@@ -8,27 +8,19 @@ export default function Review() {
   const fnReviewChange = (e)=>{  setReview( e.target.value ) };
   
   useEffect( ()=>{
-    console.log( review );
-  }, [review]);
+    // console.log( review );
+  }, []);
 
-  {
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   // useEffect( async () => {
-  //   // fetch('./data/dataSample.json')
-  //   // .then(res => res.json() )
-  //   // .then(console.log);   
-    
-  //       const resolve = await fetch('./data/dataSample.json');
-  //       const data    = await resolve.json();
-  //       console.log( data );
+  //   // const response = await axios.get('./data/dataSample.json');
+  //   // const dataResult = await response.data;
+  //   // console.log(dataResult);
   // }, [])
-  }
-
-  useEffect( async () => {
-    const response = await axios.get('./data/dataSample.json');
-    const dataResult = await response.data;
-    console.log(dataResult);
-  }, [])
-
+  
+  
+  
   // useState()  : 하나의 내용에서 변경될 내용을 적용하기 위한 API
   // useEffect() : 상태체크(변화시 어떠한 기능을 확인체크), fetching
 
@@ -44,4 +36,4 @@ export default function Review() {
       </form>
     </div>
   )
-}
+}// Review()
