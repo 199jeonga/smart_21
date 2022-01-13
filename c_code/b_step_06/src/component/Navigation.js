@@ -6,6 +6,7 @@ export default function Navigation (){
     {content:"Main", href:"main"},
     {content:"Review", href:"review"},
     {content:"CardList", href:"cardList"},
+    {content:"Event", href:"event"},
     {content:"Product", href:'product' }
   ];
 

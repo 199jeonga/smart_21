@@ -2,6 +2,7 @@ import {Routes, Route} from 'react-router-dom';
 import Main from './Main';
 import Review from './Review';
 import CardList from './CardList';
+import Event from './Event';
 
 export default function Router(){
   return(   
@@ -9,6 +10,7 @@ export default function Router(){
     <Route path="/" element={ <Main />} />
     <Route path="/main" element={ <Main /> } />
     <Route path="/review" element={ <Review /> } />
+    <Route path="/Event" element={ <Event /> } />
     <Route path="/cardList" element={ <CardList /> } />
   </Routes>)
 }
