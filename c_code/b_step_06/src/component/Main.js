@@ -1,3 +1,4 @@
+import viewBox from './viewBox';
 import ConBox from './ConBox';
 
 
@@ -5,10 +6,8 @@ import ConBox from './ConBox';
 export default function Main() {
   return (
     <main className="container">
-        <section id="viewBox">section</section>
+        <viewBox />
         <ConBox />
-        
-        
     </main>
   )
 }

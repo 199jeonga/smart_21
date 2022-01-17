@@ -1,0 +1,12 @@
+
+$color_random: ("#aaa", "#a1d12d", "#e00","#d55e5e","#22d22a");
+
+#viewBox{
+  width: 1280px; height: 462px;
+  .view_inner{
+    width: calc(1280 * 5)px; height: 100%;
+  }
+  @for $i from 5 through(
+    .view_part_#{$i} { background-color:nth($color_random, #{$i} ) };
+  )
+}

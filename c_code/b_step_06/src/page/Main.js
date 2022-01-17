@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ViewDetail from './main/ViewDetail';
+import ViewBox from './main/ViewBox';
 import '../style/Main.scss';
 
 export default function Main() {
@@ -16,6 +17,7 @@ export default function Main() {
 
   return (
     <div className='main_area'>
+      <ViewBox />
       <h2>Title</h2>
       <div className='view_part'>
         { 

@@ -1,5 +1,5 @@
 {
-  "name": "btep_06",
+  "name": "b_step_06",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +13,7 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "sass": "^1.45.2",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
